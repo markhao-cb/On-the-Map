@@ -14,6 +14,17 @@
 		4D63310D1CEEBDD6002FC1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63310B1CEEBDD6002FC1B8 /* LaunchScreen.storyboard */; };
 		4D6331161CEEC32D002FC1B8 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331151CEEC32D002FC1B8 /* PaddingTextField.swift */; };
 		4D6331181CEEC52C002FC1B8 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331171CEEC52C002FC1B8 /* BorderedButton.swift */; };
+		4D63311E1CEECC9E002FC1B8 /* UDAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63311D1CEECC9E002FC1B8 /* UDAuthViewController.swift */; };
+		4D6331201CEECE75002FC1B8 /* UDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63311F1CEECE75002FC1B8 /* UDConstants.swift */; };
+		4D6331221CEECE9B002FC1B8 /* UDClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331211CEECE9B002FC1B8 /* UDClient.swift */; };
+		4D6331241CEED274002FC1B8 /* UDConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331231CEED274002FC1B8 /* UDConvenience.swift */; };
+		4D6331261CEEE1A9002FC1B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331251CEEE1A9002FC1B8 /* Constants.swift */; };
+		4DCC58061CEEEE84009B801E /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC58051CEEEE84009B801E /* GCDBlackBox.swift */; };
+		4DCC58081CEFBB1C009B801E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC58071CEFBB1C009B801E /* MapViewController.swift */; };
+		4DCC580A1CEFC006009B801E /* OTMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC58091CEFC006009B801E /* OTMNavigationViewController.swift */; };
+		4DCC580C1CEFC1D0009B801E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC580B1CEFC1D0009B801E /* ListTableViewController.swift */; };
+		4DCC580E1CEFC934009B801E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC580D1CEFC934009B801E /* ListTableViewCell.swift */; };
+		4DCC58101CEFCD25009B801E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC580F1CEFCD25009B801E /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		4D63310E1CEEBDD6002FC1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6331151CEEC32D002FC1B8 /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		4D6331171CEEC52C002FC1B8 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		4D63311D1CEECC9E002FC1B8 /* UDAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDAuthViewController.swift; sourceTree = "<group>"; };
+		4D63311F1CEECE75002FC1B8 /* UDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDConstants.swift; sourceTree = "<group>"; };
+		4D6331211CEECE9B002FC1B8 /* UDClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDClient.swift; sourceTree = "<group>"; };
+		4D6331231CEED274002FC1B8 /* UDConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDConvenience.swift; sourceTree = "<group>"; };
+		4D6331251CEEE1A9002FC1B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4DCC58051CEEEE84009B801E /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		4DCC58071CEFBB1C009B801E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4DCC58091CEFC006009B801E /* OTMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTMNavigationViewController.swift; sourceTree = "<group>"; };
+		4DCC580B1CEFC1D0009B801E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		4DCC580D1CEFC934009B801E /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		4DCC580F1CEFCD25009B801E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +80,17 @@
 		4D6331011CEEBDD6002FC1B8 /* On the Map */ = {
 			isa = PBXGroup;
 			children = (
+				4D63311A1CEECC3A002FC1B8 /* Controllers */,
+				4D6331191CEECC31002FC1B8 /* Models */,
 				4D6331141CEEC315002FC1B8 /* Views */,
 				4D6331021CEEBDD6002FC1B8 /* AppDelegate.swift */,
-				4D6331041CEEBDD6002FC1B8 /* LoginViewController.swift */,
 				4D6331061CEEBDD6002FC1B8 /* Main.storyboard */,
 				4D6331091CEEBDD6002FC1B8 /* Assets.xcassets */,
 				4D63310B1CEEBDD6002FC1B8 /* LaunchScreen.storyboard */,
 				4D63310E1CEEBDD6002FC1B8 /* Info.plist */,
+				4D6331251CEEE1A9002FC1B8 /* Constants.swift */,
+				4DCC58051CEEEE84009B801E /* GCDBlackBox.swift */,
+				4DCC580F1CEFCD25009B801E /* Utilities.swift */,
 			);
 			path = "On the Map";
 			sourceTree = "<group>";
@@ -74,8 +100,47 @@
 			children = (
 				4D6331151CEEC32D002FC1B8 /* PaddingTextField.swift */,
 				4D6331171CEEC52C002FC1B8 /* BorderedButton.swift */,
+				4DCC580D1CEFC934009B801E /* ListTableViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		4D6331191CEECC31002FC1B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D63311B1CEECC48002FC1B8 /* Clients */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4D63311A1CEECC3A002FC1B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D6331041CEEBDD6002FC1B8 /* LoginViewController.swift */,
+				4DCC58071CEFBB1C009B801E /* MapViewController.swift */,
+				4DCC58091CEFC006009B801E /* OTMNavigationViewController.swift */,
+				4DCC580B1CEFC1D0009B801E /* ListTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4D63311B1CEECC48002FC1B8 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				4D63311C1CEECC53002FC1B8 /* UD */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		4D63311C1CEECC53002FC1B8 /* UD */ = {
+			isa = PBXGroup;
+			children = (
+				4D63311D1CEECC9E002FC1B8 /* UDAuthViewController.swift */,
+				4D63311F1CEECE75002FC1B8 /* UDConstants.swift */,
+				4D6331211CEECE9B002FC1B8 /* UDClient.swift */,
+				4D6331231CEED274002FC1B8 /* UDConvenience.swift */,
+			);
+			name = UD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +214,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCC58081CEFBB1C009B801E /* MapViewController.swift in Sources */,
+				4D63311E1CEECC9E002FC1B8 /* UDAuthViewController.swift in Sources */,
 				4D6331051CEEBDD6002FC1B8 /* LoginViewController.swift in Sources */,
+				4DCC58101CEFCD25009B801E /* Utilities.swift in Sources */,
+				4D6331221CEECE9B002FC1B8 /* UDClient.swift in Sources */,
 				4D6331161CEEC32D002FC1B8 /* PaddingTextField.swift in Sources */,
+				4DCC580C1CEFC1D0009B801E /* ListTableViewController.swift in Sources */,
+				4DCC58061CEEEE84009B801E /* GCDBlackBox.swift in Sources */,
+				4DCC580E1CEFC934009B801E /* ListTableViewCell.swift in Sources */,
 				4D6331181CEEC52C002FC1B8 /* BorderedButton.swift in Sources */,
+				4D6331201CEECE75002FC1B8 /* UDConstants.swift in Sources */,
 				4D6331031CEEBDD6002FC1B8 /* AppDelegate.swift in Sources */,
+				4DCC580A1CEFC006009B801E /* OTMNavigationViewController.swift in Sources */,
+				4D6331241CEED274002FC1B8 /* UDConvenience.swift in Sources */,
+				4D6331261CEEE1A9002FC1B8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +378,7 @@
 				4D6331131CEEBDD6002FC1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

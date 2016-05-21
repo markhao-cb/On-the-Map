@@ -21,9 +21,11 @@ class UDClient: NSObject {
         super.init()
     }
     
-    func taskForPOSTMethod(method: String, var parameters: [String:AnyObject], jsonBody: String, completionHandlerForPOST: (result: AnyObject!, error: NSError?) -> Void) -> NSURLSessionDataTask {
+    func taskForPOSTMethod(method: String, parameters: [String:AnyObject], jsonBody: String, completionHandlerForPOST: (result: AnyObject!, error: NSError?) -> Void) -> NSURLSessionDataTask {
         
-        let request = NSMutableURLRequest(URL: UDURLFromParameters(parameters, withPathExtension: method))
+        let url = Utilities.BuildURLFrom(UDClient.Constants.ApiScheme, host: UDClient.Constants.ApiHost, path: UDClient.Constants.ApiPath, parameters: parameters, withPathExtension: method)
+        
+        let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -55,42 +57,12 @@ class UDClient: NSObject {
                 return
             }
             let newData = data.subdataWithRange(NSMakeRange(5, data.length - 5)) /* subset response data! */
-            self.convertDataWithCompletionHandler(newData, completionHandlerForConvertData: completionHandlerForPOST)
+            Utilities.convertDataWithCompletionHandler(newData, completionHandlerForConvertData: completionHandlerForPOST)
         }
         
         task.resume()
         
         return task
-    }
-    
-    // given raw JSON, return a usable Foundation object
-    private func convertDataWithCompletionHandler(data: NSData, completionHandlerForConvertData: (result: AnyObject!, error: NSError?) -> Void) {
-        
-        var parsedResult: AnyObject!
-        do {
-            parsedResult = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
-        } catch {
-            let userInfo = [NSLocalizedDescriptionKey : "Could not parse the data as JSON: '\(data)'"]
-            completionHandlerForConvertData(result: nil, error: NSError(domain: "convertDataWithCompletionHandler", code: 1, userInfo: userInfo))
-        }
-        
-        completionHandlerForConvertData(result: parsedResult, error: nil)
-    }
-    
-    func UDURLFromParameters(parameters: [String:AnyObject], withPathExtension: String? = nil) -> NSURL {
-        
-        let components = NSURLComponents()
-        components.scheme = UDClient.Constants.ApiScheme
-        components.host = UDClient.Constants.ApiHost
-        components.path = UDClient.Constants.ApiPath + (withPathExtension ?? "")
-        components.queryItems = [NSURLQueryItem]()
-        
-        for (key, value) in parameters {
-            let queryItem = NSURLQueryItem(name: key, value: "\(value)")
-            components.queryItems!.append(queryItem)
-        }
-        
-        return components.URL!
     }
     
     // MARK: Shared Instance

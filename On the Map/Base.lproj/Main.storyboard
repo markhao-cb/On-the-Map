@@ -206,6 +206,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6pQ-66-Go6"/>
+                    <connections>
+                        <outlet property="listTableView" destination="PNp-Hs-FUv" id="69B-uq-0qx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHO-go-48m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,6 +228,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B6A-3W-Pcj">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zmH-JQ-aWU" id="6ii-Gw-Q71"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

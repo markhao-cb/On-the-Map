@@ -1,0 +1,10 @@
+PODS:
+  - JCAlertView (1.1.5)
+
+DEPENDENCIES:
+  - JCAlertView
+
+SPEC CHECKSUMS:
+  JCAlertView: c65a7b298b8b497b3db783d82f719b88f4914869
+
+COCOAPODS: 0.39.0

@@ -47,18 +47,7 @@ class ListTableViewController: OTMNavigationViewController, UITableViewDelegate,
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let locations = locations {
             let location = locations[indexPath.row]
-            let app = UIApplication.sharedApplication()
-            if let toOpen = location.mediaURL {
-                if let url = NSURL(string: toOpen) {
-                    if app.canOpenURL(url) {
-                        app.openURL(url)
-                    } else {
-                        //ALERT USER ERROR.
-                        JCAlertView .showOneButtonWithTitle("Error!", message: "URL is invaild. Please try others.", buttonType: JCAlertViewButtonType.Default, buttonTitle: "OK", click: nil)
-                    }
-                }
-            }
+            openUrlFrom(location.mediaURL)
         }
-        
     }
 }

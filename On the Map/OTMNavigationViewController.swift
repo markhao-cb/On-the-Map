@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JCAlertView
 
 class OTMNavigationViewController: UIViewController {
     
@@ -15,7 +16,7 @@ class OTMNavigationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "On the Map"
+        setupNavigationBar()
         getStudentLocations()
         
     }
@@ -27,8 +28,23 @@ class OTMNavigationViewController: UIViewController {
 }
 
 extension OTMNavigationViewController {
+    private func setupNavigationBar() {
+        navigationItem.title = "On the Map"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "pin"), style: .Plain, target: self, action: #selector(addPin))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "refresh"), style: .Plain, target: self, action: #selector(getStudentLocations))
+    }
+}
+
+extension OTMNavigationViewController {
+    func addPin() {
+        let addPinVC = self.storyboard?.instantiateViewControllerWithIdentifier("addPinViewController") as! AddPinViewController
+        self.presentViewController(addPinVC, animated: true, completion: nil)
+    }
+}
+
+extension OTMNavigationViewController {
     
-    private func getStudentLocations() {
+    @objc private func getStudentLocations() {
         
         let parameters = [
             ParseClient.ParametersKeys.Limit : 100,
@@ -38,12 +54,18 @@ extension OTMNavigationViewController {
         ParseClient.sharedInstance().taskForGETMethod(method, parameters: parameters) { (result, error) in
             performUIUpdatesOnMain({ 
                 guard (error == nil) else {
-                    self.alertError("Failed to get new data. Error: \(error?.domain)")
+                    
+                    showAlertViewWith("Oops!", error: "Failed to get new data. Error: \(error?.domain)", type: .AlertViewWithTwoButtons, firstButtonTitle: "Try again", firstButtonHandler: {
+                        self.getStudentLocations()
+                        }, secondButtonTitle: "Cancel", secondButtonHandler: nil)
                     return
                 }
                 
                 guard let locations = result[ParseClient.ResponseKeys.Results] as? [[String : AnyObject]] else {
-                    self.alertError("No result returned.")
+                    
+                    showAlertViewWith("Oops!", error: "No location result returned.", type: .AlertViewWithTwoButtons, firstButtonTitle: "Try again", firstButtonHandler: {
+                        self.getStudentLocations()
+                        }, secondButtonTitle: "Cancel", secondButtonHandler: nil)
                     return
                 }
                 
@@ -53,11 +75,18 @@ extension OTMNavigationViewController {
             })
         }
     }
-}
-
-extension OTMNavigationViewController {
     
-    private func alertError(error: String) {
-        
+    static func postStudentLocationFrom(link: String, location: String) {
+        let parameters = [String: AnyObject]()
+        let method = ParseClient.Methods.StudentLocation
+        let jsonBody = "{\"uniqueKey\": \"1234\", \"firstName\": \"John\", \"lastName\": \"Doe\",\"mapString\": \"Mountain View, CA\", \"mediaURL\": \"https://udacity.com\",\"latitude\": 37.386052, \"longitude\": -122.083851}"
     }
 }
+
+
+
+
+
+
+
+

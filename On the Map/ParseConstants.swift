@@ -17,10 +17,12 @@ extension ParseClient {
         static let ApiScheme = "https"
         static let ApiHost = "api.parse.com"
         static let ApiPath = "/1/classes"
+        static let JSON = "application/json"
         
         struct HeaderField {
             static let ApplicationID = "X-Parse-Application-Id"
             static let ApiKey = "X-Parse-REST-API-Key"
+            static let ContentType = "Content-Type"
         }
     }
     

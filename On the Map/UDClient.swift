@@ -14,6 +14,9 @@ class UDClient: NSObject {
     
     // authentication state
     var sessionID : String? = nil
+    var userID: String? = nil
+    var firstName: String? = nil
+    var lastName: String? = nil
     
     // MARK: Initializers
     
@@ -36,7 +39,7 @@ class UDClient: NSObject {
             func sendError(error: String) {
                 print(error)
                 let userInfo = [NSLocalizedDescriptionKey : error]
-                completionHandlerForPOST(result: nil, error: NSError(domain: "taskForGETMethod", code: 1, userInfo: userInfo))
+                completionHandlerForPOST(result: nil, error: NSError(domain: "taskForPOSTMethod", code: 1, userInfo: userInfo))
             }
             
             /* GUARD: Was there an error? */
@@ -64,6 +67,48 @@ class UDClient: NSObject {
         
         return task
     }
+    
+    func taskForGETMethod(method: String, parameters: [String:AnyObject], completionHandlerForGET: (result: AnyObject!, error: NSError?) -> Void) -> NSURLSessionDataTask {
+        
+        let url = Utilities.BuildURLFrom(UDClient.Constants.ApiScheme, host: UDClient.Constants.ApiHost, path: UDClient.Constants.ApiPath, parameters: parameters, withPathExtension: method)
+        
+        let request = NSMutableURLRequest(URL: url)
+        
+        let task = Utilities.session.dataTaskWithRequest(request) { (data, response, error) in
+            
+            func sendError(error: String) {
+                print(error)
+                let userInfo = [NSLocalizedDescriptionKey : error]
+                completionHandlerForGET(result: nil, error: NSError(domain: "taskForGETMethod", code: 1, userInfo: userInfo))
+            }
+            
+            /* GUARD: Was there an error? */
+            guard (error == nil) else {
+                sendError("There was an error with your request: \(error)")
+                return
+            }
+            
+            /* GUARD: Did we get a successful 2XX response? */
+            guard let statusCode = (response as? NSHTTPURLResponse)?.statusCode where statusCode >= 200 && statusCode <= 299 else {
+                sendError("Your request returned a status code other than 2xx!")
+                return
+            }
+            
+            /* GUARD: Was there any data returned? */
+            guard let data = data else {
+                sendError("No data was returned by the request!")
+                return
+            }
+            let newData = data.subdataWithRange(NSMakeRange(5, data.length - 5)) /* subset response data! */
+            Utilities.convertDataWithCompletionHandler(newData, completionHandlerForConvertData: completionHandlerForGET)
+        }
+        
+        task.resume()
+        
+        return task
+    }
+    
+    
     
     // MARK: Shared Instance
     

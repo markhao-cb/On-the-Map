@@ -41,23 +41,11 @@ class MapViewController: OTMNavigationViewController, MKMapViewDelegate {
         return pinView
     }
     
-    // This delegate method is implemented to respond to taps. It opens the system browser
-    // to the URL specified in the annotationViews subtitle property.
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            let app = UIApplication.sharedApplication()
-            if let toOpen = view.annotation?.subtitle! {
-                app.openURL(NSURL(string: toOpen)!)
-            }
+            openUrlFrom((view.annotation?.subtitle!))
         }
     }
-    //    func mapView(mapView: MKMapView, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-    //
-    //        if control == annotationView.rightCalloutAccessoryView {
-    //            let app = UIApplication.sharedApplication()
-    //            app.openURL(NSURL(string: annotationView.annotation.subtitle))
-    //        }
-    //    }
     
     func locationDataUpdated() {
 

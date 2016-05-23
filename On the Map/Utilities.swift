@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import JCAlertView
 
 struct Utilities {
     
@@ -49,10 +50,55 @@ struct Utilities {
     struct NotificationConstants {
         static let LocaltionDataUpdated = "locationDataUpdated"
     }
+    
+    static let TextFieldPlaceHolderAttr = [
+        NSFontAttributeName : UIFont.systemFontOfSize(23),
+        NSForegroundColorAttributeName: UIColor.whiteColor()
+    ]
+    
+    
+    enum AlertViewType {
+        case AlertViewWithOneButton
+        case AlertViewWithTwoButtons
+    }
 }
+
+extension UIViewController {
+    
+    func setupButton(btn: UIButton) {
+        btn.layer.borderWidth = 1
+        btn.layer.cornerRadius = 5
+    }
+}
+
+//Class Methods
 
 func performUIUpdatesOnMain(updates: () -> Void) {
     dispatch_async(dispatch_get_main_queue()) {
         updates()
+    }
+}
+
+func openUrlFrom(mediaURL: String?) {
+    let app = UIApplication.sharedApplication()
+    if let toOpen = mediaURL {
+        if let url = NSURL(string: toOpen) {
+            if app.canOpenURL(url) {
+                app.openURL(url)
+            } else {
+                showAlertViewWith("Oops!", error: "URL is invaild. Please try others.", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
+            }
+        }
+    }
+}
+
+func showAlertViewWith(title: String, error: String, type: Utilities.AlertViewType, firstButtonTitle: String?, firstButtonHandler: (() -> Void)?, secondButtonTitle: String?, secondButtonHandler: (() -> Void)? ) {
+    switch type {
+    case .AlertViewWithOneButton:
+        JCAlertView.showOneButtonWithTitle(title, message: error, buttonType: .Default, buttonTitle: firstButtonTitle, click: firstButtonHandler)
+        break
+    case .AlertViewWithTwoButtons:
+        JCAlertView.showTwoButtonsWithTitle(title, message: error, buttonType: .Cancel, buttonTitle: firstButtonTitle, click: firstButtonHandler, buttonType: .Default, buttonTitle: secondButtonTitle, click: secondButtonHandler)
+        break
     }
 }

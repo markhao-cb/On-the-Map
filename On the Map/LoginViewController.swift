@@ -55,6 +55,11 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func signUpPressed(sender: AnyObject) {
+        openUrlFrom(UDClient.Constants.SignUpURL)
+    }
+    
+    
     private func completeLogin() {
         performUIUpdatesOnMain {
             self.debugTextLabel.text = ""
@@ -121,32 +126,15 @@ extension LoginViewController: UITextFieldDelegate {
 
 extension LoginViewController {
     private func postSession() {
-        
-        let parameters = [String: AnyObject]()
-        let method = UDClient.Methods.Session
-        let jsonBody = "{\"udacity\": {\"username\": \"\(loginEmailTextField.text!)\", \"password\": \"\(loginPasswordTextField.text!)\"}}"
-        
-        UDClient.sharedInstance().taskForPOSTMethod(method, parameters: parameters, jsonBody: jsonBody) { (result, error) in
-            performUIUpdatesOnMain({ 
-                guard (error == nil) else {
-                    self.displayError("Login Failed. Please try again. (Error: \(error!.domain)")
-                    return
-                }
-               
-                guard let session = result[UDClient.ResponseKeys.Session] as? [String: AnyObject] else {
-                    self.displayError("Login Failed. (Get session).")
-                    return
-                }
-                
-                guard let sessionId = session[UDClient.ResponseKeys.SessionId] as? String else {
-                    self.displayError("Login Failed. (Get session id).")
-                    return
-                }
-                
-                UDClient.sharedInstance().sessionID = sessionId
-                self.completeLogin()
-            })
+        UDClient.sharedInstance().authenticateWithUsernameAndPassword(loginEmailTextField.text!, password: loginPasswordTextField.text!) { (success, errorString) in
             
+            performUIUpdatesOnMain({ 
+                if success {
+                    self.completeLogin()
+                } else {
+                    self.displayError(errorString)
+                }
+            })
         }
         
     }
@@ -173,7 +161,7 @@ extension LoginViewController {
     
     private func displayError(errorString: String?) {
         if let errorString = errorString {
-            debugTextLabel.text = errorString
+            showAlertViewWith("Oops!", error: errorString, type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
             setUIEnabled(true)
         }
     }

@@ -16,6 +16,8 @@ class AddPinViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     weak var currentViewController: UIViewController?
     
+    var postLocationDelegate : PostLocationDelegate?
+    
     
     //MARK: -Life Circle
     override func viewDidLoad() {
@@ -30,13 +32,24 @@ class AddPinViewController: UIViewController {
 }
 
 //MARK: ADD Location Delegate Method
-extension AddPinViewController : AddLocationDelegate {
+extension AddPinViewController : AddLocationDelegate, PostLocationDelegate {
+    
     func locationFound(result: MKLocalSearchResponse, fromString: String) {
-        let newViewController = self.storyboard?.instantiateViewControllerWithIdentifier("submitLocationViewController") as! SubmitLoactionViewController
-        newViewController.view.translatesAutoresizingMaskIntoConstraints = false
-        newViewController.mapItem = result.mapItems.first
-        newViewController.queryString = fromString
-        cycleFromViewController(currentViewController!, toViewController: newViewController)
+        let submitLocationVC = self.storyboard?.instantiateViewControllerWithIdentifier("submitLocationViewController") as! SubmitLoactionViewController
+        submitLocationVC.postLocationDelegate = self
+        submitLocationVC.view.translatesAutoresizingMaskIntoConstraints = false
+        submitLocationVC.mapItem = result.mapItems.first
+        submitLocationVC.queryString = fromString
+        cycleFromViewController(currentViewController!, toViewController: submitLocationVC)
+    }
+    
+    func locationSubmittedWithLocation(location: ParseLocation) {
+        if let delegate = self.postLocationDelegate {
+            delegate.locationSubmittedWithLocation(location)
+            performUIUpdatesOnMain({ 
+                self.dismissViewControllerAnimated(true, completion: nil)
+            })
+        }
     }
 }
 
@@ -79,4 +92,8 @@ extension AddPinViewController {
                 newViewController.didMoveToParentViewController(self)
         })
     }
+}
+
+protocol PostLocationDelegate {
+    func locationSubmittedWithLocation(location: ParseLocation)
 }

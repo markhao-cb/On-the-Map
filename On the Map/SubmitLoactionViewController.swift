@@ -19,6 +19,7 @@ class SubmitLoactionViewController: UIViewController {
     
     var mapItem : MKMapItem?
     var queryString: String?
+    var postLocationDelegate : PostLocationDelegate?
     
     var placeHolder : NSAttributedString {
         get {
@@ -43,13 +44,14 @@ class SubmitLoactionViewController: UIViewController {
     
     //MARK: -IBActions
     @IBAction func submitLocation(sender: AnyObject) {
-        guard let link = linkTextField.text where link != "" else {
+        guard let link = linkTextField.text where link != "" && link != placeHolder.string else {
             showAlertViewWith("Oops!", error: "Link can't be blank.", type: .AlertViewWithOneButton , firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
             return
         }
-        
-        OTMNavigationViewController.postStudentLocationFrom(link, location: queryString!)
-        
+        let location = createParseLocationWithLink(link)
+        if let delegate = postLocationDelegate {
+            delegate.locationSubmittedWithLocation(location)
+        }
     }
 }
 
@@ -74,7 +76,7 @@ extension SubmitLoactionViewController : UITextFieldDelegate {
     }
 }
 
-//UI related methods
+//MARK: -UI related methods
 extension SubmitLoactionViewController {
     
     private func setUIEnabled(enabled: Bool) {
@@ -96,5 +98,19 @@ extension SubmitLoactionViewController {
             mapView.addAnnotation(annotation)
             mapView.setCenterCoordinate(coordinate, animated: true)
         }
+    }
+}
+
+//MARK: -Helper methods
+extension SubmitLoactionViewController {
+    private func createParseLocationWithLink(link: String) -> ParseLocation {
+        let firstName = UDClient.sharedInstance().firstName!
+        let lastName = UDClient.sharedInstance().lastName!
+        let longtitude = Float(mapItem!.placemark.coordinate.longitude)
+        let latitude = Float(mapItem!.placemark.coordinate.latitude)
+        let mediaURL = link
+        let mapString = queryString!
+        let uniqueKey = UDClient.sharedInstance().userID!
+        return ParseLocation(firstName: firstName, lastName: lastName, latitude: latitude, longtitude: longtitude, mediaURL: mediaURL, mapString: mapString, uniqueKey: uniqueKey)
     }
 }

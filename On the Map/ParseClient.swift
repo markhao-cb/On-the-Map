@@ -51,8 +51,10 @@ class ParseClient: NSObject {
     
     func taskForPOSTMethod(method: String, parameters: [String: AnyObject], jsonBody: String, completionHandlerForPOST: (result: AnyObject!, error : NSError?) -> Void) -> NSURLSessionDataTask {
         
-        let url = Utilities.BuildURLFrom(ParseClient.Constants.ApiScheme, host: ParseClient.Constants.ApiHost, path: ParseClient.Constants.ApiPath, parameters: parameters, withPathExtension: method)
+//        let url = Utilities.BuildURLFrom(ParseClient.Constants.ApiScheme, host: ParseClient.Constants.ApiHost, path: ParseClient.Constants.ApiPath, parameters: parameters, withPathExtension: method)
+        let url = NSURL(string: "https://api.parse.com/1/classes/StudentLocation")!
         let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
         request.addValue(ParseClient.Constants.ApplicationID, forHTTPHeaderField: ParseClient.Constants.HeaderField.ApplicationID)
         request.addValue(ParseClient.Constants.ApiKey, forHTTPHeaderField: ParseClient.Constants.HeaderField.ApiKey)
         request.addValue(ParseClient.Constants.JSON, forHTTPHeaderField: ParseClient.Constants.HeaderField.ContentType)
@@ -63,7 +65,7 @@ class ParseClient: NSObject {
             func sendError(error: String) {
                 print(error)
                 let userInfo = [NSLocalizedDescriptionKey : error]
-                completionHandlerForPOST(result: nil, error: NSError(domain: "taskForGETMethod", code: 1, userInfo: userInfo))
+                completionHandlerForPOST(result: nil, error: NSError(domain: "taskForPOSTMethod", code: 1, userInfo: userInfo))
             }
             
             /* GUARD: Was there an error? */

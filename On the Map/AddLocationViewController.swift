@@ -37,7 +37,7 @@ class AddLocationViewController: UIViewController {
     
     //MARK: -IBActions
     @IBAction func findOnTheMap(sender: AnyObject) {
-        guard let query = locationTextField.text where query != "" else {
+        guard let query = locationTextField.text where query != "" && query != placeHolder.string else {
             showAlertViewWith("Oops!", error: "Location can't be blank.", type: .AlertViewWithOneButton , firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
             return
         }

@@ -512,11 +512,11 @@
                         <viewControllerLayoutGuide type="bottom" id="5af-Pd-4Cg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gJ5-hR-oHm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-b9-iSO">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-b9-iSO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2R-kQ-RE4">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="195"/>
@@ -539,13 +539,13 @@
                                             <constraint firstItem="EP7-kd-vx4" firstAttribute="centerY" secondItem="U2R-kQ-RE4" secondAttribute="centerY" id="qeR-Db-OCF"/>
                                         </constraints>
                                     </view>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="esj-Ao-DLD">
-                                        <rect key="frame" x="0.0" y="195" width="600" height="405"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="esj-Ao-DLD">
+                                        <rect key="frame" x="0.0" y="195" width="600" height="341"/>
                                     </mapView>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-uX-qfN">
-                                <rect key="frame" x="0.0" y="468" width="600" height="132"/>
+                                <rect key="frame" x="0.0" y="404" width="600" height="132"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKM-bw-SjG">
                                         <rect key="frame" x="248" y="49" width="104" height="34"/>
@@ -570,7 +570,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="K0c-b9-iSO" firstAttribute="top" secondItem="JZW-Ln-HcZ" secondAttribute="bottom" constant="-20" id="8se-cf-hdu"/>
+                            <constraint firstItem="K0c-b9-iSO" firstAttribute="top" secondItem="JZW-Ln-HcZ" secondAttribute="bottom" id="8se-cf-hdu"/>
                             <constraint firstItem="5af-Pd-4Cg" firstAttribute="top" secondItem="K0c-b9-iSO" secondAttribute="bottom" id="JLp-Kn-pEj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rb8-uX-qfN" secondAttribute="trailing" constant="-20" id="MPF-Ky-ZMY"/>
                             <constraint firstItem="5af-Pd-4Cg" firstAttribute="top" secondItem="rb8-uX-qfN" secondAttribute="bottom" id="e83-5t-ZVL"/>
@@ -579,6 +579,9 @@
                             <constraint firstItem="K0c-b9-iSO" firstAttribute="leading" secondItem="gJ5-hR-oHm" secondAttribute="leadingMargin" constant="-20" id="njH-RC-PCl"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="536"/>
                     <connections>
                         <outlet property="linkTextField" destination="EP7-kd-vx4" id="XnO-cg-hHy"/>
                         <outlet property="mapView" destination="esj-Ao-DLD" id="NIx-mZ-1a5"/>

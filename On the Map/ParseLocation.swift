@@ -34,6 +34,16 @@ struct ParseLocation {
         updatedAt = dictionary[ParseClient.ResponseKeys.UpdatedAt] as? String
     }
     
+    init(firstName: String, lastName: String, latitude: Float, longtitude: Float, mediaURL: String, mapString: String, uniqueKey: String) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.longtitude = longtitude
+        self.latitude = latitude
+        self.mediaURL = mediaURL
+        self.mapString = mapString
+        self.uniqueKey = uniqueKey
+    }
+    
     static func locationsFromResult(results: [[String: AnyObject]]) -> [ParseLocation] {
         
         var locations = [ParseLocation]()

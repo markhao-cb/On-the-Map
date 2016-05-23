@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginEmailTextField.delegate = self
+        loginPasswordTextField.delegate = self
         subscribeToNotification(UIKeyboardWillShowNotification, selector: #selector(keyboardWillShow))
         subscribeToNotification(UIKeyboardWillHideNotification, selector: #selector(keyboardWillHide))
         subscribeToNotification(UIKeyboardDidShowNotification, selector: #selector(keyboardDidShow))
@@ -140,8 +142,6 @@ extension LoginViewController {
     }
 }
 
-
-
 extension LoginViewController {
     
     private func setUIEnabled(enabled: Bool) {
@@ -157,6 +157,8 @@ extension LoginViewController {
         } else {
             loginButton.alpha = 0.5
         }
+        
+        
     }
     
     private func displayError(errorString: String?) {

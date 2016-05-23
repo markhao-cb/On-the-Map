@@ -25,7 +25,7 @@ struct Utilities {
         components.host = host
         components.path = path + (withPathExtension ?? "")
         components.queryItems = [NSURLQueryItem]()
-        
+
         for (key, value) in parameters {
             let queryItem = NSURLQueryItem(name: key, value: "\(value)")
             components.queryItems!.append(queryItem)
@@ -98,7 +98,14 @@ func showAlertViewWith(title: String, error: String, type: Utilities.AlertViewTy
         JCAlertView.showOneButtonWithTitle(title, message: error, buttonType: .Default, buttonTitle: firstButtonTitle, click: firstButtonHandler)
         break
     case .AlertViewWithTwoButtons:
-        JCAlertView.showTwoButtonsWithTitle(title, message: error, buttonType: .Cancel, buttonTitle: firstButtonTitle, click: firstButtonHandler, buttonType: .Default, buttonTitle: secondButtonTitle, click: secondButtonHandler)
+        JCAlertView.showTwoButtonsWithTitle(title, message: error, buttonType: .Default, buttonTitle: firstButtonTitle, click: firstButtonHandler, buttonType: .Cancel, buttonTitle: secondButtonTitle, click: secondButtonHandler)
         break
     }
+}
+
+func addProgressIndicatorTo(view: UIView, withAnimation: Bool) {
+    var indicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+    indicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0)
+    indicator.center = view.center
+    view.addSubview(indicator)
 }

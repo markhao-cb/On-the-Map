@@ -53,8 +53,8 @@
 		4D6331211CEECE9B002FC1B8 /* UDClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDClient.swift; sourceTree = "<group>"; };
 		4D6331231CEED274002FC1B8 /* UDConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDConvenience.swift; sourceTree = "<group>"; };
 		4D8125F71CF386D80086B149 /* ParseConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseConvenience.swift; sourceTree = "<group>"; };
-		4D8125FD1CF3DC220086B149 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		4D8125FE1CF3DC220086B149 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4D8125FD1CF3DC220086B149 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "On the Map/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		4D8125FE1CF3DC220086B149 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "On the Map/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		4D8126011CF3DDE80086B149 /* On the Map-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "On the Map-Bridging-Header.h"; sourceTree = "<group>"; };
 		4DCC58071CEFBB1C009B801E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4DCC58091CEFC006009B801E /* OTMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTMNavigationViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		206F5F15B3E5EF2EBE87B80B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D8125FD1CF3DC220086B149 /* FBSDKCoreKit.framework */,
+				4D8125FE1CF3DC220086B149 /* FBSDKLoginKit.framework */,
 				936FE56872D3B0CBDC132656 /* Pods_On_the_Map.framework */,
 			);
 			name = Frameworks;
@@ -189,8 +191,6 @@
 		4D8125FC1CF3DC020086B149 /* Facebook SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4D8125FD1CF3DC220086B149 /* FBSDKCoreKit.framework */,
-				4D8125FE1CF3DC220086B149 /* FBSDKLoginKit.framework */,
 				4D8126011CF3DDE80086B149 /* On the Map-Bridging-Header.h */,
 			);
 			name = "Facebook SDK";

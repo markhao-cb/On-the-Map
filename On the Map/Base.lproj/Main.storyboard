@@ -515,7 +515,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-b9-iSO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-b9-iSO">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2R-kQ-RE4">
@@ -539,7 +539,7 @@
                                             <constraint firstItem="EP7-kd-vx4" firstAttribute="centerY" secondItem="U2R-kQ-RE4" secondAttribute="centerY" id="qeR-Db-OCF"/>
                                         </constraints>
                                     </view>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="esj-Ao-DLD">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="esj-Ao-DLD">
                                         <rect key="frame" x="0.0" y="195" width="600" height="341"/>
                                     </mapView>
                                 </subviews>

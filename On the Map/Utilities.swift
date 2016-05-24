@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import JCAlertView
 import NVActivityIndicatorView
+import SystemConfiguration
 
 struct Utilities {
     
@@ -61,6 +62,25 @@ struct Utilities {
         case AlertViewWithOneButton
         case AlertViewWithTwoButtons
     }
+    
+    struct Reachability {
+        static func isConnectedToNetwork() -> Bool {
+            var zeroAddress = sockaddr_in()
+            zeroAddress.sin_len = UInt8(sizeofValue(zeroAddress))
+            zeroAddress.sin_family = sa_family_t(AF_INET)
+            let defaultRouteReachability = withUnsafePointer(&zeroAddress) {
+                SCNetworkReachabilityCreateWithAddress(nil, UnsafePointer($0))
+            }
+            var flags = SCNetworkReachabilityFlags()
+            if !SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) {
+                return false
+            }
+            let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+            let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+            return (isReachable && !needsConnection)
+        }
+    }
+    
 }
 
 extension UIViewController {
@@ -129,19 +149,3 @@ func showAlertViewWith(title: String, error: String, type: Utilities.AlertViewTy
         break
     }
 }
-
-
-
-//func showProgressIndicator(toView: UIView, animated: Bool) {
-//     weak var indicator = NVActivityIndicatorView(frame: CGRectMake(0, 0, 40, 40), type: .BallSpinFadeLoader, color: UIColor.grayColor(), padding: 20)
-//    if animated {
-//        indicator.center = toView.center
-//        toView.addSubview(indicator)
-//        toView.bringSubviewToFront(indicator)
-//        indicator.startAnimation()
-//    } else {
-//        indicator.stopAnimation()
-//        indicator.removeFromSuperview()
-//    }
-//    
-//}

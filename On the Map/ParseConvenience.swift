@@ -15,7 +15,7 @@ extension ParseClient {
         
         let parameters = [
             ParseClient.ParametersKeys.Limit : 100,
-            ParseClient.ParametersKeys.Order : "-createdAt"
+            ParseClient.ParametersKeys.Order : "-updatedAt"
         ]
         let method = ParseClient.Methods.StudentLocation
         ParseClient.sharedInstance().taskForGETMethod(method, parameters: parameters) { (result, error) in

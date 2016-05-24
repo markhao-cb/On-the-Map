@@ -11,7 +11,7 @@ import NVActivityIndicatorView
 
 class OTMNavigationViewController: UIViewController {
     
-    var locations : [ParseLocation]? = [ParseLocation]()
+    var locations : [ParseLocation]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,8 @@ class OTMNavigationViewController: UIViewController {
 extension OTMNavigationViewController {
     private func setupNavigationBar() {
         navigationItem.title = "On the Map"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "pin"), style: .Plain, target: self, action: #selector(addPin))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "logout"), style: .Plain, target: self, action: #selector(logoutCurrentSession))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "pin"), style: .Plain, target: self, action: #selector(addPin))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Log Out", style: .Plain, target: self, action: #selector(logoutCurrentSession))
     }
 }
 

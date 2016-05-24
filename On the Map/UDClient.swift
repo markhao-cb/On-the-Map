@@ -44,7 +44,7 @@ class UDClient: NSObject {
             
             /* GUARD: Was there an error? */
             guard (error == nil) else {
-                sendError("There was an error with your request: \(error)")
+                sendError("There was an error with your request: \(error?.localizedDescription)")
                 return
             }
             

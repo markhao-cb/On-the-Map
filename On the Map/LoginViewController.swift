@@ -12,6 +12,10 @@ import NVActivityIndicatorView
 class LoginViewController: UIViewController {
     
     var keyboardOnScreen = false
+    let fbLoginButton: FBSDKLoginButton = {
+        let button = FBSDKLoginButton()
+        return button
+    }()
 
     //MARK: Properties
     @IBOutlet weak var loginEmailTextField: PaddingTextField!
@@ -49,7 +53,9 @@ class LoginViewController: UIViewController {
         userDidTapView(self)
         
         if loginEmailTextField.text!.isEmpty || loginPasswordTextField.text!.isEmpty {
-            debugTextLabel.text = "Email or Password Empty."
+            displayError("Email and Password Could not be blank.")
+        } else if !Utilities.Reachability.isConnectedToNetwork() {
+            displayError("The Internet Connection Appears to be Offline.")
         } else {
             setUIEnabled(false)
             postSession()
@@ -134,7 +140,7 @@ extension LoginViewController {
                 if success {
                     self.completeLogin()
                 } else {
-                    self.displayError(errorString)
+                    self.displayError("Invalid Email or Password.")
                 }
             })
         }

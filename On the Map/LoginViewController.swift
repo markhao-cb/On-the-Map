@@ -12,10 +12,10 @@ import NVActivityIndicatorView
 class LoginViewController: UIViewController {
     
     var keyboardOnScreen = false
-    let fbLoginButton: FBSDKLoginButton = {
-        let button = FBSDKLoginButton()
-        return button
-    }()
+//    let fbLoginButton: FBSDKLoginButton = {
+//        let button = FBSDKLoginButton()
+//        return button
+//    }()
 
     //MARK: Properties
     @IBOutlet weak var loginEmailTextField: PaddingTextField!

@@ -13,8 +13,9 @@ import UIKit
 // MARK: -Methods for login
 extension UDClient {
     
-    func authenticateWithUsernameAndPassword(username:String, password:String, completionHandlerForAuth: (success: Bool, errorString: String?) -> Void) {
-        getSessionIDWithUsernameAndPassword(username, password: password) { (success, sessionID, userID, errorString) in
+    func authenticateWithUsernameAndPasswordOrFBToken(username:String?, password:String?, token: String?, completionHandlerForAuth: (success: Bool, errorString: String?) -> Void) {
+        
+        getSessionIDWithUsernameAndPasswordOrFBToken(username, password: password, token: token) { (success, sessionID, userID, errorString) in
             if success {
                 print("Get SessionID and UserID Successfully. \n SessionID: \(sessionID!) \n UserID: \(userID!)")
                 UDClient.sharedInstance().sessionID = sessionID
@@ -38,11 +39,17 @@ extension UDClient {
         
     }
     
-    private func getSessionIDWithUsernameAndPassword(username: String, password: String, completionHandlerForSessionId: (success: Bool, sessionID: String?, userID: String?,  errorString: String?) -> Void) {
+    private func getSessionIDWithUsernameAndPasswordOrFBToken(username: String?, password: String?, token: String?, completionHandlerForSessionId: (success: Bool, sessionID: String?, userID: String?,  errorString: String?) -> Void) {
         
         let parameters = [String: AnyObject]()
         let method = UDClient.Methods.Session
-        let jsonBody = "{\"udacity\": {\"username\": \"\(username)\", \"password\": \"\(password)\"}}"
+        var jsonBody: String
+        if let token = token {
+            jsonBody = "{\"facebook_mobile\": {\"access_token\": \"\(token);\"}}"
+        } else {
+            jsonBody = "{\"udacity\": {\"username\": \"\(username!)\", \"password\": \"\(password!)\"}}"
+        }
+        
         
         UDClient.sharedInstance().taskForPOSTMethod(method, parameters: parameters, jsonBody: jsonBody) { (result, error) in
         
@@ -108,6 +115,7 @@ extension UDClient {
             UDClient.sharedInstance().lastName = nil
             UDClient.sharedInstance().sessionID = nil
             UDClient.sharedInstance().userID = nil
+            UDClient.sharedInstance().FBToken = nil
             
             completionHandlerForLogout(success: true, errorMessage: nil)
         }

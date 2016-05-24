@@ -13,28 +13,20 @@ class ListTableViewController: OTMNavigationViewController, UITableViewDelegate,
 
     @IBOutlet weak var listTableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(locationDataUpdated), name: Utilities.NotificationConstants.LocaltionDataUpdated, object: nil)
-        
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(locationDataUpdated), name: Utilities.NotificationConstants.LocaltionDataUpdated, object: nil)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let locations = locations {
-            return locations.count
-        } else {
-            return 0
-        }
+        return locations.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ListTableViewCell") as! ListTableViewCell
-        if let locations = locations {
-            let location = locations[indexPath.row]
-            cell.listNameLabel.text = "\(location.firstName) \(location.lastName)"
-        }
+        let location = locations[indexPath.row]
+        cell.listNameLabel.text = "\(location.firstName) \(location.lastName)"
         return cell
     }
     
@@ -45,9 +37,7 @@ class ListTableViewController: OTMNavigationViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let locations = locations {
-            let location = locations[indexPath.row]
-            openUrlFrom(location.mediaURL)
-        }
+        let location = locations[indexPath.row]
+        openUrlFrom(location.mediaURL)
     }
 }

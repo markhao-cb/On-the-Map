@@ -8,11 +8,15 @@
 
 import UIKit
 import NVActivityIndicatorView
+import FBSDKLoginKit
 
 class OTMNavigationViewController: UIViewController {
     
-    var locations : [ParseLocation]?
+    //MARK: -Properties
+    var locations = StudentData.sharedLocations()
     
+    
+    //MARK: -Life Circle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,19 +39,10 @@ extension OTMNavigationViewController {
     }
 }
 
+
+//MARK: -PostLocation Delegate Methods
 extension OTMNavigationViewController : PostLocationDelegate {
-    func addPin() {
-        if checkIfAlreadyPosted() {
-            showAlertViewWith("Warning", error: "You Have Already Posted a Student Location. Would You Like to Overwrite Your Current Location?", type: .AlertViewWithTwoButtons, firstButtonTitle: "Overwrite", firstButtonHandler: { 
-                    performUIUpdatesOnMain({ 
-                       self.createAddPinVC()
-                    })
-                }, secondButtonTitle: "Cancel", secondButtonHandler: nil)
-        } else {
-            createAddPinVC()
-        }
-    }
-    
+
     func locationSubmittedWithLocation(location: ParseLocation) {
         postStudentLocationFrom(location)
     }
@@ -83,7 +78,7 @@ extension OTMNavigationViewController {
                 NVActivityIndicatorView.hideHUDForView(self.view)
                 if success {
                     showAlertViewWith("Yeah!", error: "You just posted your location!", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
-                    self.locations?.insert(location, atIndex: 0)
+                    self.locations.insert(location, atIndex: 0)
                     NSNotificationCenter.defaultCenter().postNotificationName(Utilities.NotificationConstants.LocaltionDataUpdated, object: nil)
                 } else {
                     showAlertViewWith("Oops!", error: errorMessage!, type: .AlertViewWithTwoButtons, firstButtonTitle: "Try again", firstButtonHandler: {
@@ -94,11 +89,29 @@ extension OTMNavigationViewController {
         }
     }
     
+    //MARK: -Selectors
+    func addPin() {
+        if checkIfAlreadyPosted() {
+            showAlertViewWith("Warning", error: "You Have Already Posted a Student Location. Would You Like to Overwrite Your Current Location?", type: .AlertViewWithTwoButtons, firstButtonTitle: "Overwrite", firstButtonHandler: {
+                performUIUpdatesOnMain({
+                    self.createAddPinVC()
+                })
+                }, secondButtonTitle: "Cancel", secondButtonHandler: nil)
+        } else {
+            createAddPinVC()
+        }
+    }
+    
     func logoutCurrentSession() {
         showAlertViewWith("Wait...", error: "Are You Sure to Logout?", type: .AlertViewWithTwoButtons, firstButtonTitle: "Yes", firstButtonHandler: {
+                performUIUpdatesOnMain({ 
+                    NVActivityIndicatorView.showHUDAddedTo(self.view)
+                })
                 UDClient.sharedInstance().logoutCurrentSession({ (success, errorMessage) in
                     performUIUpdatesOnMain({
                         print("Logout Successfully")
+                        NVActivityIndicatorView.hideHUDForView(self.view)
+                        FBSDKLoginManager().logOut()
                         self.dismissViewControllerAnimated(true, completion: nil)
                     })
                 })
@@ -110,11 +123,9 @@ extension OTMNavigationViewController {
 //MARK: -Helper methods
 extension OTMNavigationViewController {
     private func checkIfAlreadyPosted() -> Bool {
-        if let locations = locations {
-            for location in locations {
-                if UDClient.sharedInstance().userID! == location.uniqueKey {
-                    return true
-                }
+        for location in locations {
+            if UDClient.sharedInstance().userID! == location.uniqueKey {
+                return true
             }
         }
         return false

@@ -10,6 +10,8 @@
 		4D348F6A1CF241EF003CF8B2 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D348F691CF241EF003CF8B2 /* AddLocationViewController.swift */; };
 		4D348F6C1CF2B887003CF8B2 /* SubmitLoactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D348F6B1CF2B887003CF8B2 /* SubmitLoactionViewController.swift */; };
 		4D348F6E1CF2BD87003CF8B2 /* AddPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D348F6D1CF2BD87003CF8B2 /* AddPinViewController.swift */; };
+		4D5FDEB61CF43384005C8051 /* FBConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FDEB51CF43384005C8051 /* FBConvenience.swift */; };
+		4D5FDEB81CF4BB01005C8051 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FDEB71CF4BB01005C8051 /* StudentData.swift */; };
 		4D6331031CEEBDD6002FC1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331021CEEBDD6002FC1B8 /* AppDelegate.swift */; };
 		4D6331051CEEBDD6002FC1B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331041CEEBDD6002FC1B8 /* LoginViewController.swift */; };
 		4D6331081CEEBDD6002FC1B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6331061CEEBDD6002FC1B8 /* Main.storyboard */; };
@@ -17,7 +19,6 @@
 		4D63310D1CEEBDD6002FC1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63310B1CEEBDD6002FC1B8 /* LaunchScreen.storyboard */; };
 		4D6331161CEEC32D002FC1B8 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331151CEEC32D002FC1B8 /* PaddingTextField.swift */; };
 		4D6331181CEEC52C002FC1B8 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331171CEEC52C002FC1B8 /* BorderedButton.swift */; };
-		4D63311E1CEECC9E002FC1B8 /* UDAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63311D1CEECC9E002FC1B8 /* UDAuthViewController.swift */; };
 		4D6331201CEECE75002FC1B8 /* UDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63311F1CEECE75002FC1B8 /* UDConstants.swift */; };
 		4D6331221CEECE9B002FC1B8 /* UDClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331211CEECE9B002FC1B8 /* UDClient.swift */; };
 		4D6331241CEED274002FC1B8 /* UDConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6331231CEED274002FC1B8 /* UDConvenience.swift */; };
@@ -37,6 +38,8 @@
 		4D348F691CF241EF003CF8B2 /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		4D348F6B1CF2B887003CF8B2 /* SubmitLoactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLoactionViewController.swift; sourceTree = "<group>"; };
 		4D348F6D1CF2BD87003CF8B2 /* AddPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPinViewController.swift; sourceTree = "<group>"; };
+		4D5FDEB51CF43384005C8051 /* FBConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBConvenience.swift; sourceTree = "<group>"; };
+		4D5FDEB71CF4BB01005C8051 /* StudentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		4D6330FF1CEEBDD6002FC1B8 /* On the Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On the Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6331021CEEBDD6002FC1B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D6331041CEEBDD6002FC1B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		4D63310E1CEEBDD6002FC1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6331151CEEC32D002FC1B8 /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		4D6331171CEEC52C002FC1B8 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		4D63311D1CEECC9E002FC1B8 /* UDAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDAuthViewController.swift; sourceTree = "<group>"; };
 		4D63311F1CEECE75002FC1B8 /* UDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDConstants.swift; sourceTree = "<group>"; };
 		4D6331211CEECE9B002FC1B8 /* UDClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDClient.swift; sourceTree = "<group>"; };
 		4D6331231CEED274002FC1B8 /* UDConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDConvenience.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 				936FE56872D3B0CBDC132656 /* Pods_On_the_Map.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D5FDEB41CF43371005C8051 /* FB */ = {
+			isa = PBXGroup;
+			children = (
+				4D5FDEB51CF43384005C8051 /* FBConvenience.swift */,
+			);
+			name = FB;
 			sourceTree = "<group>";
 		};
 		4D6330F61CEEBDD6002FC1B8 = {
@@ -148,6 +158,7 @@
 		4D63311B1CEECC48002FC1B8 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				4D5FDEB41CF43371005C8051 /* FB */,
 				4DCC58111CEFCFEF009B801E /* Parse */,
 				4D63311C1CEECC53002FC1B8 /* UD */,
 			);
@@ -157,7 +168,6 @@
 		4D63311C1CEECC53002FC1B8 /* UD */ = {
 			isa = PBXGroup;
 			children = (
-				4D63311D1CEECC9E002FC1B8 /* UDAuthViewController.swift */,
 				4D63311F1CEECE75002FC1B8 /* UDConstants.swift */,
 				4D6331211CEECE9B002FC1B8 /* UDClient.swift */,
 				4D6331231CEED274002FC1B8 /* UDConvenience.swift */,
@@ -168,7 +178,6 @@
 		4D8125FB1CF3BC9B0086B149 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4D8125FC1CF3DC020086B149 /* Facebook SDK */,
 				4D6331021CEEBDD6002FC1B8 /* AppDelegate.swift */,
 				4D6331061CEEBDD6002FC1B8 /* Main.storyboard */,
 				4D6331091CEEBDD6002FC1B8 /* Assets.xcassets */,
@@ -179,13 +188,6 @@
 			name = "Support Files";
 			sourceTree = "<group>";
 		};
-		4D8125FC1CF3DC020086B149 /* Facebook SDK */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Facebook SDK";
-			sourceTree = "<group>";
-		};
 		4DCC58111CEFCFEF009B801E /* Parse */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +195,7 @@
 				4DCC58141CEFD038009B801E /* ParseClient.swift */,
 				4DCC58161CEFD051009B801E /* ParseLocation.swift */,
 				4D8125F71CF386D80086B149 /* ParseConvenience.swift */,
+				4D5FDEB71CF4BB01005C8051 /* StudentData.swift */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -329,14 +332,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCC58081CEFBB1C009B801E /* MapViewController.swift in Sources */,
-				4D63311E1CEECC9E002FC1B8 /* UDAuthViewController.swift in Sources */,
 				4DCC58151CEFD038009B801E /* ParseClient.swift in Sources */,
+				4D5FDEB81CF4BB01005C8051 /* StudentData.swift in Sources */,
 				4D348F6C1CF2B887003CF8B2 /* SubmitLoactionViewController.swift in Sources */,
 				4D6331051CEEBDD6002FC1B8 /* LoginViewController.swift in Sources */,
 				4DCC58171CEFD051009B801E /* ParseLocation.swift in Sources */,
 				4DCC58101CEFCD25009B801E /* Utilities.swift in Sources */,
 				4D6331221CEECE9B002FC1B8 /* UDClient.swift in Sources */,
 				4D348F6E1CF2BD87003CF8B2 /* AddPinViewController.swift in Sources */,
+				4D5FDEB61CF43384005C8051 /* FBConvenience.swift in Sources */,
 				4D6331161CEEC32D002FC1B8 /* PaddingTextField.swift in Sources */,
 				4DCC580C1CEFC1D0009B801E /* ListTableViewController.swift in Sources */,
 				4DCC58131CEFD01E009B801E /* ParseConstants.swift in Sources */,

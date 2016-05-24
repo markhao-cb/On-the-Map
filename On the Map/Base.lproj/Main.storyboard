@@ -99,12 +99,29 @@
                                             <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0s8-bA-ktU"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYy-av-nEu">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaJ-mc-1oL">
                                         <rect key="frame" x="0.0" y="341" width="560" height="186"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
-                                        <color key="textColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-O9-n96" customClass="FBSDKLoginButton">
+                                                <rect key="frame" x="0.0" y="111" width="560" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="560" id="arb-JQ-NU9"/>
+                                                    <constraint firstAttribute="height" constant="48" id="jQb-eA-dtm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fbLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kve-ch-zp1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="EuE-O9-n96" secondAttribute="bottom" constant="27" id="1E1-iN-Nhe"/>
+                                            <constraint firstItem="EuE-O9-n96" firstAttribute="centerX" secondItem="iaJ-mc-1oL" secondAttribute="centerX" id="lTF-0J-uc7"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Ayy-BY-DIs" firstAttribute="height" secondItem="5Hm-bj-ilA" secondAttribute="height" id="aMj-zY-Rnn"/>
@@ -124,7 +141,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="debugTextLabel" destination="PYy-av-nEu" id="ELN-ey-m0a"/>
+                        <outlet property="fbLoginButton" destination="EuE-O9-n96" id="8iK-Lh-GgQ"/>
                         <outlet property="loginButton" destination="tIR-6Q-090" id="C2z-TP-dhl"/>
                         <outlet property="loginEmailTextField" destination="5Hm-bj-ilA" id="7iL-Li-QfN"/>
                         <outlet property="loginPasswordTextField" destination="Ayy-BY-DIs" id="Mwc-gw-7Mu"/>
@@ -139,7 +156,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="303.75" y="428.87323943661971"/>
+            <point key="canvasLocation" x="303" y="428"/>
         </scene>
         <!--List Table View Controller-->
         <scene sceneID="RoC-Db-ni8">
@@ -176,7 +193,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N28-5Q-sWQ">
                                                             <rect key="frame" x="70" y="0.0" width="474" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -242,7 +259,7 @@
                                                     <constraint firstAttribute="width" constant="243" id="gjI-tw-C88"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="36"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>

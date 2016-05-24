@@ -96,7 +96,9 @@ extension SubmitLoactionViewController {
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             mapView.addAnnotation(annotation)
-            mapView.setCenterCoordinate(coordinate, animated: true)
+            let span = MKCoordinateSpanMake(5, 5)
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+            mapView.setRegion(region, animated: true)
         }
     }
 }

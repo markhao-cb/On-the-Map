@@ -15,9 +15,11 @@ class MapViewController: OTMNavigationViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(locationDataUpdated), name: Utilities.NotificationConstants.LocaltionDataUpdated, object: nil)
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(locationDataUpdated), name: Utilities.NotificationConstants.LocaltionDataUpdated, object: nil)
     }
     
     // MARK: - MKMapViewDelegate
@@ -51,35 +53,32 @@ class MapViewController: OTMNavigationViewController, MKMapViewDelegate {
 
         var annotations = [MKPointAnnotation]()
         
-        if let locations = locations {
-            for location in locations {
+        for location in locations {
             
-                let lat = CLLocationDegrees(Double(location.latitude))
-                let long = CLLocationDegrees(Double(location.longtitude))
-                
-                
-                let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                
-                let first = location.firstName
-                let last = location.lastName
-                let mediaURL = location.mediaURL
-                
-                
-                let annotation = MKPointAnnotation()
-                annotation.coordinate = coordinate
-                annotation.title = "\(first) \(last)"
-                annotation.subtitle = mediaURL
-    
-                annotations.append(annotation)
-            }
+            let lat = CLLocationDegrees(Double(location.latitude))
+            let long = CLLocationDegrees(Double(location.longtitude))
             
-            performUIUpdatesOnMain({ 
-                self.mapView.removeAnnotations(self.mapView.annotations)
-                self.mapView.addAnnotations(annotations)
-            })
             
+            let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            
+            let first = location.firstName
+            let last = location.lastName
+            let mediaURL = location.mediaURL
+            
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            annotation.title = "\(first) \(last)"
+            annotation.subtitle = mediaURL
+            
+            annotations.append(annotation)
         }
-    }
         
+        performUIUpdatesOnMain({
+            self.mapView.removeAnnotations(self.mapView.annotations)
+            self.mapView.addAnnotations(annotations)
+        })
+    }
+    
 }
 

@@ -13,6 +13,7 @@ class UDClient: NSObject {
     // MARK: Properties
     
     // authentication state
+    var FBToken : String? = nil
     var sessionID : String? = nil
     var userID: String? = nil
     var firstName: String? = nil

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class LoginViewController: UIViewController {
     
@@ -24,7 +25,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loginEmailTextField.delegate = self
         loginPasswordTextField.delegate = self
         subscribeToNotification(UIKeyboardWillShowNotification, selector: #selector(keyboardWillShow))
@@ -150,12 +150,15 @@ extension LoginViewController {
         signUpButton.enabled = enabled
         loginEmailTextField.enabled = enabled
         loginPasswordTextField.enabled = enabled
+//        showProgressIndicator(self.view, animated: !enabled)
         
         // adjust login button alpha
         if enabled {
             loginButton.alpha = 1.0
+            NVActivityIndicatorView.hideHUDForView(view)
         } else {
             loginButton.alpha = 0.5
+            NVActivityIndicatorView.showHUDAddedTo(view)
         }
         
         

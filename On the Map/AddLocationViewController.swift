@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import NVActivityIndicatorView
 
 class AddLocationViewController: UIViewController {
     
@@ -41,30 +42,7 @@ class AddLocationViewController: UIViewController {
             showAlertViewWith("Oops!", error: "Location can't be blank.", type: .AlertViewWithOneButton , firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
             return
         }
-
-        let request = MKLocalSearchRequest()
-        request.naturalLanguageQuery = query
-        
-        let search = MKLocalSearch(request: request)
-        search.startWithCompletionHandler { (response, error) in
-            guard (error == nil) else {
-                print(error?.domain)
-                showAlertViewWith("Oops!", error: "Search for location returns an error: \(error?.domain)", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
-                return
-            }
-            
-            guard let response = response else {
-                showAlertViewWith("Oops!", error: "Location didn't find.", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
-                return
-            }
-            
-            if response.mapItems.count > 1 {
-                showAlertViewWith("Oops!", error: "Your result contains more than one location. Please be more specific and try again.", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
-            }
-            if let delegate = self.addLocationDelegate {
-                delegate.locationFound(response, fromString: query)
-            }
-        }
+        startSearchingWith(query)
     }
     
     @IBAction func userDidTapView(sender: AnyObject) {
@@ -113,6 +91,39 @@ extension AddLocationViewController {
         }
     }
     
+}
+
+//MARK: -Helper methods
+extension AddLocationViewController {
+    private func startSearchingWith(mapString: String) {
+        NVActivityIndicatorView.showHUDAddedTo(view)
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = mapString
+        
+        let search = MKLocalSearch(request: request)
+        search.startWithCompletionHandler { (response, error) in
+            performUIUpdatesOnMain({
+                NVActivityIndicatorView.hideHUDForView(self.view)
+                guard (error == nil) else {
+                    print(error?.domain)
+                    showAlertViewWith("Oops!", error: "Search for location returns an error: \(error?.domain)", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
+                    return
+                }
+                
+                guard let response = response else {
+                    showAlertViewWith("Oops!", error: "Location didn't find.", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
+                    return
+                }
+                
+                if response.mapItems.count > 1 {
+                    showAlertViewWith("Oops!", error: "Your result contains more than one location. Please be more specific and try again.", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
+                }
+                if let delegate = self.addLocationDelegate {
+                    delegate.locationFound(response, fromString: mapString)
+                }
+            })
+        }
+    }
 }
 
 // MARK: -Add Location Protocol

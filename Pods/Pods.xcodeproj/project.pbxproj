@@ -13,14 +13,14 @@
 		<key>0089450DD843F2A7CE3A4D6C3109A847</key>
 		<dict>
 			<key>fileRef</key>
-			<string>164B40311B43D5A0557090F9944164C3</string>
+			<string>88801DA8F178D5B0F678E73621E88329</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>00EC68A7435ACE83CAB6E836435C2E5E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>7E5EE1CF3A63F094A34507643AB07B2E</string>
+			<string>47E696ECF185860A1AA2792DB1D27188</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -73,10 +73,50 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>018C17CE3972AF17ACC7A2E5974BC29E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>72AB2A29B9E25655F90662B625F07606</string>
+				<string>A0F98ABAAA42687E592367CAE180FFE5</string>
+				<string>4BBF6BE18DA9549C2DE97C99FDD55544</string>
+				<string>2DA90D3B396AF4A08B17A2D391A345FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JCAlertView</string>
+			<key>path</key>
+			<string>JCAlertView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0686B89336BC7948B8112632BE3BA8E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>325FE27B4D5A9B65832F7ED6E551CDA9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0950F87B0845B3CBD7BDED8C137EA4B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallPulseRise.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0ABA90843BCEA735C903E5D0255D4A0B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>576063F3F038CA84CB9D3425BD56D1D9</string>
+			<string>D5C58939097A63362C7B6EB163261F2E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -100,168 +140,161 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0DD0F24195448A010122B5E4C638B767</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JCAlertView.m</string>
-			<key>path</key>
-			<string>JCAlertView/JCAlertView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>11E7C25A504D1DF028D3B5F4AD71F493</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>JCAlertView</string>
-			<key>target</key>
-			<string>E6AF542C0BD4B678F0B156D005629387</string>
-			<key>targetProxy</key>
-			<string>CAB0B6888C70E71C9889C1A1024092D5</string>
-		</dict>
-		<key>1283A347B192E7DEE662E5AE74092E10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5719E01E6ADCEF611D57D48C75685BF5</string>
-				<string>61F349BB536E5C969CE0C05AD8634E8D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>164B40311B43D5A0557090F9944164C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>name</key>
-			<string>JCAlertView.bundle</string>
-			<key>path</key>
-			<string>JCAlertView/JCAlertView.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1680A94BA2C8FAC23D0B19F4F408FF80</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2D94D38E7567208960F0C9836063FDEF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-On the Map/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-On the Map/Pods-On the Map.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_On_the_Map</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1A9309D87EFE7D87914526611BD3192E</key>
+		<key>0C695BF3402437CDFF170B86B302914B</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>940D661E9CB1A3EFA9BB6E9C53315458</string>
+				<string>B354CF862EE92710D7B0B1ECB475766A</string>
+				<string>36324E3AEC6182F2DB1942378E28608D</string>
+				<string>AFEF8C8E5AE685690EBAFDC424AEBBB1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>234591A5C9C8A5AA4745145C715F6D84</key>
+		<key>0F85524881D6DA94329304BA17B41E45</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D74B5D87D8EDF51E492961873F01E386</string>
+			<string>196A85F6641FD2A8FDD16983576A2054</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>248730DEFD093D7D6D2C8BF1031E32CB</key>
+		<key>11F2BC52C5B615CDAEAFB7851AC38F94</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>63D809E2C2ED5FF319B1D26FEDD42559</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1317BB4073D01F6F798D8A71D02AA800</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31657290D819D5C07C0FBD5EEE31A4EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>13EDB09E7DEF6FFF1E38F91B668F718A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8C85875FF0009747BE9805FC883ACAE6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14B8B9B15ECBE87983FF987239AB2D7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35891B0FDFEB04FDD15421753FA5B9D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>265D53E3A7FAD567C7F8DDE64454DD73</key>
+		<key>16712E46D27CAE0BDED7ADC15D54139D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D619CCBE1109ADB1348AED005390136D</string>
+				<string>6D19F69E79CAB3D88F1AC84F129CBA48</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>195C882D7CF3B187A7ABD8D9A24ECDDC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>66D3CB4E9B3C69F6F37E2C6EA1F5AD2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>196A85F6641FD2A8FDD16983576A2054</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>JCAlertView.h</string>
+			<string>NVActivityIndicatorAnimationBlank.swift</string>
 			<key>path</key>
-			<string>JCAlertView/JCAlertView.h</string>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C0E8CDFFADE9727251ABFD5A91C4F73</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallPulseSync.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CD9428D34F76710C9565467CF1F2F73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0950F87B0845B3CBD7BDED8C137EA4B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1CE27802769C74B1066C3B485B2C2490</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallSpinFadeLoader.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1DD0C4D6F1DB0270DD7A98B6BD82559E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A68654BAAC647CDF4B1BA264F6FB11C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>21545F160C46FD160CD617256FA82180</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B09EE5C6C7B1DE198C4F5DCD2B10CAF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2A04406638B0778D1B76E18A22A3A07E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationPacman.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -292,23 +325,125 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2DDC32BAD4B651702F896C4D5ABBC649</key>
+		<key>2DA90D3B396AF4A08B17A2D391A345FB</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>164B40311B43D5A0557090F9944164C3</string>
+				<string>C5D23A9EB569EE55192EE036EC8D1FD4</string>
+				<string>93FFF6B88D277EED3F48E7910B72B57A</string>
+				<string>47E696ECF185860A1AA2792DB1D27188</string>
+				<string>84D725460EFC16CDAC0B9DD05D406C37</string>
+				<string>9D95EA5899648C500D4A24026B764F68</string>
+				<string>D5C58939097A63362C7B6EB163261F2E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/JCAlertView</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2EFED0CE11EA81004677A2DED552985B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30D8B672163827E1FFE389CC9A78D2B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallZigZag.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>31657290D819D5C07C0FBD5EEE31A4EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationDelegate.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3229A4B8643CC32C52B866C29AF7D3F4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>814B3CB6028166429CD4A44B2835DD4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>325FE27B4D5A9B65832F7ED6E551CDA9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallZigZagDeflect.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>34F1A41432F9FD7D314BC11F66BBA40C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>64AC97AF79ECFB0979DF7CEE30CCB4D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35891B0FDFEB04FDD15421753FA5B9D7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>478F0BBA725626FFE9A7DE2D5034DF8B</string>
+				<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+				<string>8C03939B2EB142FFCFA9CACC9698B2C2</string>
+				<string>7AB5E9160CAA2677328BF9618CD52E91</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>36324E3AEC6182F2DB1942378E28608D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8C03939B2EB142FFCFA9CACC9698B2C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>3697EC534A000CB8473C7DB50CCC01EE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>7E5EE1CF3A63F094A34507643AB07B2E</string>
+			<string>47E696ECF185860A1AA2792DB1D27188</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -361,16 +496,33 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>398B853D061945FAC4E240DA55868266</key>
+		<key>3A3B9A6B441C04E57E670AC59A535EFD</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>41AF6FE5FEF3F547A7AE0AA584885514</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>NVActivityIndicatorAnimationLineScale.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B78A1E88961009FCFA1E08E494A625B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallRotateChase.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -387,54 +539,99 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>3D9D6222B1F2CA9DC263BB93474086E4</key>
+		<key>3D2DE86D50ADFF4D9DEC9E25FBCE2593</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallBeat.swift</string>
 			<key>path</key>
-			<string>JCAlertView-prefix.pch</string>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>41AF6FE5FEF3F547A7AE0AA584885514</key>
+		<key>3FB33F37C30D0B8EE0982F254CDEDAD8</key>
 		<dict>
-			<key>children</key>
+			<key>buildConfigurationList</key>
+			<string>16712E46D27CAE0BDED7ADC15D54139D</string>
+			<key>buildPhases</key>
 			<array>
-				<string>265D53E3A7FAD567C7F8DDE64454DD73</string>
-				<string>0DD0F24195448A010122B5E4C638B767</string>
-				<string>2DDC32BAD4B651702F896C4D5ABBC649</string>
-				<string>74DA2BEA185AC67D975B4754E976114E</string>
+				<string>C4307C0161EBD291811E439473A5C1F5</string>
+				<string>96AF7E59134CAA2F210498B154F08122</string>
+				<string>B4EF8A0F0D46D7339173DDEA3AC2E34A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>EC9B2BD1D6DB9600050287BBFC660665</string>
+				<string>D01C3747CC71C83E015F1726277BD8C6</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>JCAlertView</string>
-			<key>path</key>
-			<string>JCAlertView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Pods-On the Map</string>
+			<key>productName</key>
+			<string>Pods-On the Map</string>
+			<key>productReference</key>
+			<string>FA58CD53811433B53CB0765CE45FE1AF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>433CD3331B6C3787F473C941B61FC68F</key>
+		<key>45B8928705B1C80CD136C427F025726C</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>1283A347B192E7DEE662E5AE74092E10</string>
+				<string>9D0EE7B15E6199DA4C50FB7D88991814</string>
+				<string>BBCA1EEBD4D5812E7A6A79E93A1AAD92</string>
+				<string>72079B7D694FB64AA4109CDFB0181EB4</string>
+				<string>195C882D7CF3B187A7ABD8D9A24ECDDC</string>
+				<string>6F092C062F9052E042399723F30A51FD</string>
+				<string>6DF83D3AA2FC55EC3A34594816BAAB73</string>
+				<string>BC25E5B3E461B68EA802BD657A72701A</string>
+				<string>1CD9428D34F76710C9565467CF1F2F73</string>
+				<string>70BEF2DCF1FC89FCF98648FD6786A1AC</string>
+				<string>67BC2C4F5C488A9B4F8ECD0DF6611F2F</string>
+				<string>6438C9150C2D0298D0FDF8C3C6566842</string>
+				<string>21545F160C46FD160CD617256FA82180</string>
+				<string>7F4D112748EC34E41E3C773E84C2CF53</string>
+				<string>EA0EC972B280E9EFDDE71403E549B8B0</string>
+				<string>B75B9D17D39561D7A2F3E67C79FA9F27</string>
+				<string>D0A45C8A6CA3AF10051732462D30FEC0</string>
+				<string>AA4C2F68882DBBC02C6EF24AF45D2350</string>
+				<string>84E3D8DE2C016D309B09DDB3593EC4A1</string>
+				<string>0686B89336BC7948B8112632BE3BA8E6</string>
+				<string>0F85524881D6DA94329304BA17B41E45</string>
+				<string>1DD0C4D6F1DB0270DD7A98B6BD82559E</string>
+				<string>1317BB4073D01F6F798D8A71D02AA800</string>
+				<string>B75369FF87B3F9D706695005D71600C2</string>
+				<string>CC78BD4F08AE3B0638B853554389D7CA</string>
+				<string>FC513481E5E93CCD0D98FFE2339E5F3C</string>
+				<string>34F1A41432F9FD7D314BC11F66BBA40C</string>
+				<string>CC4F3479033014A3EFFF0C4712CFB523</string>
+				<string>62FD8C39DA7D9DF1AB613C34299AB9AB</string>
+				<string>3229A4B8643CC32C52B866C29AF7D3F4</string>
+				<string>DD2FA3B21ECD486EA416583741BB1631</string>
+				<string>11F2BC52C5B615CDAEAFB7851AC38F94</string>
+				<string>13EDB09E7DEF6FFF1E38F91B668F718A</string>
+				<string>7EDBA77726C5EA875090AE0BFF3B6B41</string>
+				<string>EE5D6304D6519F6B8791C10525530DB8</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>4713C656A63D8979D3793FF4433B6877</key>
 		<dict>
 			<key>fileRef</key>
-			<string>265D53E3A7FAD567C7F8DDE64454DD73</string>
+			<string>72AB2A29B9E25655F90662B625F07606</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -444,6 +641,60 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>478F0BBA725626FFE9A7DE2D5034DF8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Accelerate.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>47E696ECF185860A1AA2792DB1D27188</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>JCAlertView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48957C83362E76A1ABDEA12277600519</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallPulse.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4BBF6BE18DA9549C2DE97C99FDD55544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88801DA8F178D5B0F678E73621E88329</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>51766E4698B89AC2B6C7A5329E429D86</key>
 		<dict>
@@ -458,44 +709,231 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5719E01E6ADCEF611D57D48C75685BF5</key>
+		<key>5265FE94ADBB4CF26AE009528CE5C160</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B65F834C8D9F87E031EA72F8B54735A4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/NVActivityIndicatorView/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>NVActivityIndicatorView</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Accelerate.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>Debug</string>
 		</dict>
-		<key>576063F3F038CA84CB9D3425BD56D1D9</key>
+		<key>549246F5321A22D01006C3801DE2BC61</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationLineSpinFadeLoader.swift</string>
 			<key>path</key>
-			<string>JCAlertView-umbrella.h</string>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>61F349BB536E5C969CE0C05AD8634E8D</key>
+		<key>5808D58D1830247ACB009488726E1B06</key>
 		<dict>
+			<key>fileRef</key>
+			<string>94C1631C3138D6254F5F1FD6BC936310</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>59A327F7F24E136046A35CFDD9559AE6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<string>Info.plist</string>
 			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>626D49AD18621B0A3059EE726B27AE89</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F4F8A67C8FCC5B2A6025788DA6595442</string>
+			<key>buildPhases</key>
+			<array>
+				<string>45B8928705B1C80CD136C427F025726C</string>
+				<string>0C695BF3402437CDFF170B86B302914B</string>
+				<string>9FC3AB2929BCDFA057C438E81756087C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>NVActivityIndicatorView</string>
+			<key>productName</key>
+			<string>NVActivityIndicatorView</string>
+			<key>productReference</key>
+			<string>8C199A7515A66E56BCD028ED8571C9EC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>62FD8C39DA7D9DF1AB613C34299AB9AB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2A04406638B0778D1B76E18A22A3A07E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D809E2C2ED5FF319B1D26FEDD42559</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationTriangleSkewSpin.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6438C9150C2D0298D0FDF8C3C6566842</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B78A1E88961009FCFA1E08E494A625B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>64AC97AF79ECFB0979DF7CEE30CCB4D7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationLineScalePulseOutRapid.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>652D9B9507528F2136093F7F42846B3A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A739595A32AEED70A7079449C185CBE7</string>
+				<string>8C199A7515A66E56BCD028ED8571C9EC</string>
+				<string>FA58CD53811433B53CB0765CE45FE1AF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66519B6E3210589E24B7432AF01ABEE5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>59A327F7F24E136046A35CFDD9559AE6</string>
+				<string>823F080044D9128C9B58EE9854F33596</string>
+				<string>B65F834C8D9F87E031EA72F8B54735A4</string>
+				<string>2EFED0CE11EA81004677A2DED552985B</string>
+				<string>7F46AA3B6B0FC5CF76EC6DC94295214E</string>
+				<string>94C1631C3138D6254F5F1FD6BC936310</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/NVActivityIndicatorView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66D3CB4E9B3C69F6F37E2C6EA1F5AD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallClipRotatePulse.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>67BC2C4F5C488A9B4F8ECD0DF6611F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>83ADC16C860C4273D7F29200F9DE470B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>6B6E7019772C2A0AD752B3EF0C138649</key>
 		<dict>
@@ -508,23 +946,183 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>74DA2BEA185AC67D975B4754E976114E</key>
+		<key>6C0E786E554332173B4B29CBAF4F5BCA</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>248730DEFD093D7D6D2C8BF1031E32CB</string>
-				<string>CA244C787BCAD463856E8954E494ED28</string>
-				<string>7E5EE1CF3A63F094A34507643AB07B2E</string>
-				<string>E3DE303911FF43794547B3E5DA8AA478</string>
-				<string>3D9D6222B1F2CA9DC263BB93474086E4</string>
-				<string>576063F3F038CA84CB9D3425BD56D1D9</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>NVActivityIndicatorAnimationLineScaleParty.swift</string>
 			<key>path</key>
-			<string>../Target Support Files/JCAlertView</string>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D19F69E79CAB3D88F1AC84F129CBA48</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D9C63B945CF13EE3080C8A4F8C0FB2AC</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-On the Map/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-On the Map/Pods-On the Map.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_On_the_Map</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6DF83D3AA2FC55EC3A34594816BAAB73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC4E525CD5B5D92887748D97DE008994</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6E12E34361E83858BE000CCA1967F344</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallGridBeat.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E767DBD09D9B2FBE7735ABD88956647</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorView.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/NVActivityIndicatorView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F092C062F9052E042399723F30A51FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6E12E34361E83858BE000CCA1967F344</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FCB8C23D6F298CAD38B330666D3D606</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationSquareSpin.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>70BEF2DCF1FC89FCF98648FD6786A1AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1C0E8CDFFADE9727251ABFD5A91C4F73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>72079B7D694FB64AA4109CDFB0181EB4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7ACB9B421960A99665111A63082A601F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>724692A8C674D94C1318391D4429DFE1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallScaleMultiple.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>72AB2A29B9E25655F90662B625F07606</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JCAlertView.h</string>
+			<key>path</key>
+			<string>JCAlertView/JCAlertView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -541,14 +1139,42 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>7AB5E9160CAA2677328BF9618CD52E91</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7ACB9B421960A99665111A63082A601F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallClipRotateMultiple.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>433CD3331B6C3787F473C941B61FC68F</string>
-				<string>398B853D061945FAC4E240DA55868266</string>
-				<string>C2FED0C7CDB72A269C4D941713277104</string>
+				<string>14B8B9B15ECBE87983FF987239AB2D7B</string>
+				<string>909E8C7E8F2093EF1235EE9586295698</string>
+				<string>652D9B9507528F2136093F7F42846B3A</string>
 				<string>BEB3C599ABF36FD682697DE74477F14C</string>
 			</array>
 			<key>isa</key>
@@ -556,52 +1182,237 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7E5EE1CF3A63F094A34507643AB07B2E</key>
+		<key>7EDBA77726C5EA875090AE0BFF3B6B41</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2EFED0CE11EA81004677A2DED552985B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F46AA3B6B0FC5CF76EC6DC94295214E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>JCAlertView.xcconfig</string>
+			<string>NVActivityIndicatorView-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>91B437787AE95CBE5AA0DBC9C58D945C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BAC4B23A7940D6D07320BE804FE280E6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D5644E15DDAF7026F55735AB11EF7A63</string>
-				<string>1A9309D87EFE7D87914526611BD3192E</string>
-				<string>9A9F9BF88D2A02DBFEA3B0CF4062B7BE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>11E7C25A504D1DF028D3B5F4AD71F493</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-On the Map</string>
-			<key>productName</key>
-			<string>Pods-On the Map</string>
-			<key>productReference</key>
-			<string>A413CD2270DD74E8C5CA9243AA3BAA77</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>940D661E9CB1A3EFA9BB6E9C53315458</key>
+		<key>7F4D112748EC34E41E3C773E84C2CF53</key>
 		<dict>
 			<key>fileRef</key>
-			<string>61F349BB536E5C969CE0C05AD8634E8D</string>
+			<string>724692A8C674D94C1318391D4429DFE1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>814B3CB6028166429CD4A44B2835DD4D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationSemiCircleSpin.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>823F080044D9128C9B58EE9854F33596</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83ADC16C860C4273D7F29200F9DE470B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallRotate.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84D725460EFC16CDAC0B9DD05D406C37</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>JCAlertView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84E3D8DE2C016D309B09DDB3593EC4A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>30D8B672163827E1FFE389CC9A78D2B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>86A86009455874CFF2C875062F1AF841</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D74B5D87D8EDF51E492961873F01E386</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88801DA8F178D5B0F678E73621E88329</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>JCAlertView.bundle</string>
+			<key>path</key>
+			<string>JCAlertView/JCAlertView.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C03939B2EB142FFCFA9CACC9698B2C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>8C199A7515A66E56BCD028ED8571C9EC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>NVActivityIndicatorView.framework</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8C85875FF0009747BE9805FC883ACAE6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorShape.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/NVActivityIndicatorShape.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8EA0B1B6C87EF026B640C0C69386EFAF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>909E8C7E8F2093EF1235EE9586295698</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>018C17CE3972AF17ACC7A2E5974BC29E</string>
+				<string>B4B495477B25BF8CAA71DCDAF35D1FEB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93FFF6B88D277EED3F48E7910B72B57A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>JCAlertView.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>943456FD680E240F43599373DD2FDBFB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallScaleRippleMultiple.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94C1631C3138D6254F5F1FD6BC936310</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96AF7E59134CAA2F210498B154F08122</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AF1F5378E2F02D2ADD42198C5D75F53B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>9706235CC284856C07830B885A12B5E5</key>
 		<dict>
@@ -617,18 +1428,53 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>9A9F9BF88D2A02DBFEA3B0CF4062B7BE</key>
+		<key>9D0EE7B15E6199DA4C50FB7D88991814</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D2DE86D50ADFF4D9DEC9E25FBCE2593</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9D95EA5899648C500D4A24026B764F68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>JCAlertView-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FC3AB2929BCDFA057C438E81756087C</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>D1CEED7E96580D9B7C7C977707D8F925</string>
+				<string>5808D58D1830247ACB009488726E1B06</string>
 			</array>
 			<key>isa</key>
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>A050A73C29D30FF828655F362BAA1539</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationLineScalePulseOut.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A09E7C15F65AA32A2B565C088D5768F3</key>
 		<dict>
@@ -667,20 +1513,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A413CD2270DD74E8C5CA9243AA3BAA77</key>
+		<key>A0F98ABAAA42687E592367CAE180FFE5</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Pods_On_the_Map.framework</string>
+			<string>JCAlertView.m</string>
 			<key>path</key>
-			<string>Pods_On_the_Map.framework</string>
+			<string>JCAlertView/JCAlertView.m</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A489FD7152139DECAB8C686584CA0007</key>
 		<dict>
@@ -695,6 +1541,21 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>A68654BAAC647CDF4B1BA264F6FB11C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationCubeTransition.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
 		<dict>
@@ -769,7 +1630,21 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>B10B80BC2636D816B9D5AFFDD86D47E5</key>
+		<key>A737C8AFC6541582ADE10FD4D01D80A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A09E7C15F65AA32A2B565C088D5768F3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A739595A32AEED70A7079449C185CBE7</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -784,10 +1659,210 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>A92F8D2E0CFCE184512A98D658F70142</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E6AF542C0BD4B678F0B156D005629387</string>
+			<key>remoteInfo</key>
+			<string>JCAlertView</string>
+		</dict>
+		<key>AA4C2F68882DBBC02C6EF24AF45D2350</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7C9887F76EF6A0BA8377C6C11240F92</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AF1F5378E2F02D2ADD42198C5D75F53B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AFEF8C8E5AE685690EBAFDC424AEBBB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AB5E9160CAA2677328BF9618CD52E91</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B09EE5C6C7B1DE198C4F5DCD2B10CAF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallScale.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0CDB683F830375E8FE628F4ADE798E1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B65F834C8D9F87E031EA72F8B54735A4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/NVActivityIndicatorView/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>NVActivityIndicatorView</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B354CF862EE92710D7B0B1ECB475766A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B4B495477B25BF8CAA71DCDAF35D1FEB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3D2DE86D50ADFF4D9DEC9E25FBCE2593</string>
+				<string>C57A06AB65DDBAF9EADB47D24D08CC99</string>
+				<string>7ACB9B421960A99665111A63082A601F</string>
+				<string>66D3CB4E9B3C69F6F37E2C6EA1F5AD2F</string>
+				<string>6E12E34361E83858BE000CCA1967F344</string>
+				<string>DC4E525CD5B5D92887748D97DE008994</string>
+				<string>48957C83362E76A1ABDEA12277600519</string>
+				<string>0950F87B0845B3CBD7BDED8C137EA4B6</string>
+				<string>1C0E8CDFFADE9727251ABFD5A91C4F73</string>
+				<string>83ADC16C860C4273D7F29200F9DE470B</string>
+				<string>3B78A1E88961009FCFA1E08E494A625B</string>
+				<string>B09EE5C6C7B1DE198C4F5DCD2B10CAF1</string>
+				<string>724692A8C674D94C1318391D4429DFE1</string>
+				<string>F7DF31D19471D1B62172366A1CBA33F9</string>
+				<string>943456FD680E240F43599373DD2FDBFB</string>
+				<string>1CE27802769C74B1066C3B485B2C2490</string>
+				<string>E7C9887F76EF6A0BA8377C6C11240F92</string>
+				<string>30D8B672163827E1FFE389CC9A78D2B3</string>
+				<string>325FE27B4D5A9B65832F7ED6E551CDA9</string>
+				<string>196A85F6641FD2A8FDD16983576A2054</string>
+				<string>A68654BAAC647CDF4B1BA264F6FB11C2</string>
+				<string>31657290D819D5C07C0FBD5EEE31A4EF</string>
+				<string>3A3B9A6B441C04E57E670AC59A535EFD</string>
+				<string>6C0E786E554332173B4B29CBAF4F5BCA</string>
+				<string>A050A73C29D30FF828655F362BAA1539</string>
+				<string>64AC97AF79ECFB0979DF7CEE30CCB4D7</string>
+				<string>549246F5321A22D01006C3801DE2BC61</string>
+				<string>2A04406638B0778D1B76E18A22A3A07E</string>
+				<string>814B3CB6028166429CD4A44B2835DD4D</string>
+				<string>6FCB8C23D6F298CAD38B330666D3D606</string>
+				<string>63D809E2C2ED5FF319B1D26FEDD42559</string>
+				<string>8C85875FF0009747BE9805FC883ACAE6</string>
+				<string>6E767DBD09D9B2FBE7735ABD88956647</string>
+				<string>66519B6E3210589E24B7432AF01ABEE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NVActivityIndicatorView</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B4EF8A0F0D46D7339173DDEA3AC2E34A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A737C8AFC6541582ADE10FD4D01D80A6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B65F834C8D9F87E031EA72F8B54735A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B75369FF87B3F9D706695005D71600C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3A3B9A6B441C04E57E670AC59A535EFD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B75B9D17D39561D7A2F3E67C79FA9F27</key>
+		<dict>
+			<key>fileRef</key>
+			<string>943456FD680E240F43599373DD2FDBFB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>BA05A3BDB45C017FF654EA2D50BA65A0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>61F349BB536E5C969CE0C05AD8634E8D</string>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -808,24 +1883,24 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BAC4B23A7940D6D07320BE804FE280E6</key>
+		<key>BBCA1EEBD4D5812E7A6A79E93A1AAD92</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1680A94BA2C8FAC23D0B19F4F408FF80</string>
-				<string>D1E34752B8CFAD862BAA38EEA02AE614</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
+			<key>fileRef</key>
+			<string>C57A06AB65DDBAF9EADB47D24D08CC99</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BC25E5B3E461B68EA802BD657A72701A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>48957C83362E76A1ABDEA12277600519</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>BE2152AB7AF3EADDED988EEF6DAD728A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0DD0F24195448A010122B5E4C638B767</string>
+			<string>A0F98ABAAA42687E592367CAE180FFE5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -842,43 +1917,78 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C2FED0C7CDB72A269C4D941713277104</key>
+		<key>C4307C0161EBD291811E439473A5C1F5</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>B10B80BC2636D816B9D5AFFDD86D47E5</string>
-				<string>A413CD2270DD74E8C5CA9243AA3BAA77</string>
+				<string>86A86009455874CFF2C875062F1AF841</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>CA244C787BCAD463856E8954E494ED28</key>
+		<key>C57A06AB65DDBAF9EADB47D24D08CC99</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallClipRotate.swift</string>
 			<key>path</key>
-			<string>JCAlertView.modulemap</string>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CAB0B6888C70E71C9889C1A1024092D5</key>
+		<key>C5D23A9EB569EE55192EE036EC8D1FD4</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
+			<key>includeInIndex</key>
 			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E6AF542C0BD4B678F0B156D005629387</string>
-			<key>remoteInfo</key>
-			<string>JCAlertView</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC4F3479033014A3EFFF0C4712CFB523</key>
+		<dict>
+			<key>fileRef</key>
+			<string>549246F5321A22D01006C3801DE2BC61</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC78BD4F08AE3B0638B853554389D7CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6C0E786E554332173B4B29CBAF4F5BCA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D01C3747CC71C83E015F1726277BD8C6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>NVActivityIndicatorView</string>
+			<key>target</key>
+			<string>626D49AD18621B0A3059EE726B27AE89</string>
+			<key>targetProxy</key>
+			<string>FCD8F01345CE0B78D279DB947614E241</string>
+		</dict>
+		<key>D0A45C8A6CA3AF10051732462D30FEC0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1CE27802769C74B1066C3B485B2C2490</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>D0D7E3C9E6A45F91D3AB19488FD9BDC4</key>
 		<dict>
@@ -894,24 +2004,63 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>D1CEED7E96580D9B7C7C977707D8F925</key>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
-			<key>fileRef</key>
-			<string>A09E7C15F65AA32A2B565C088D5768F3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
+			<key>attributes</key>
 			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
 			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>652D9B9507528F2136093F7F42846B3A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E6AF542C0BD4B678F0B156D005629387</string>
+				<string>626D49AD18621B0A3059EE726B27AE89</string>
+				<string>3FB33F37C30D0B8EE0982F254CDEDAD8</string>
+			</array>
 		</dict>
-		<key>D1E34752B8CFAD862BAA38EEA02AE614</key>
+		<key>D5C58939097A63362C7B6EB163261F2E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>JCAlertView-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D619CCBE1109ADB1348AED005390136D</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D9C63B945CF13EE3080C8A4F8C0FB2AC</string>
+			<string>2D94D38E7567208960F0C9836063FDEF</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -945,7 +2094,7 @@
 				<key>MODULEMAP_FILE</key>
 				<string>Target Support Files/Pods-On the Map/Pods-On the Map.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>OTHER_LIBTOOLFLAGS</key>
@@ -958,6 +2107,8 @@
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
 				<key>TARGETED_DEVICE_FAMILY</key>
 				<string>1,2</string>
 				<key>VERSIONING_SYSTEM</key>
@@ -968,59 +2119,7 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>C2FED0C7CDB72A269C4D941713277104</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E6AF542C0BD4B678F0B156D005629387</string>
-				<string>91B437787AE95CBE5AA0DBC9C58D945C</string>
-			</array>
-		</dict>
-		<key>D5644E15DDAF7026F55735AB11EF7A63</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>234591A5C9C8A5AA4745145C715F6D84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>Debug</string>
 		</dict>
 		<key>D74B5D87D8EDF51E492961873F01E386</key>
 		<dict>
@@ -1048,25 +2147,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E248A6082D95CEEFB211F6E4C3969104</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E3DE303911FF43794547B3E5DA8AA478</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E3DE303911FF43794547B3E5DA8AA478</key>
+		<key>DC4E525CD5B5D92887748D97DE008994</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallGridPulse.swift</string>
 			<key>path</key>
-			<string>JCAlertView-dummy.m</string>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD2FA3B21ECD486EA416583741BB1631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FCB8C23D6F298CAD38B330666D3D606</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E248A6082D95CEEFB211F6E4C3969104</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84D725460EFC16CDAC0B9DD05D406C37</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>E6AF542C0BD4B678F0B156D005629387</key>
 		<dict>
@@ -1090,7 +2198,7 @@
 			<key>productName</key>
 			<string>JCAlertView</string>
 			<key>productReference</key>
-			<string>B10B80BC2636D816B9D5AFFDD86D47E5</string>
+			<string>A739595A32AEED70A7079449C185CBE7</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -1104,6 +2212,21 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7C9887F76EF6A0BA8377C6C11240F92</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallTrianglePath.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1121,6 +2244,31 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>EA0EC972B280E9EFDDE71403E549B8B0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7DF31D19471D1B62172366A1CBA33F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC9B2BD1D6DB9600050287BBFC660665</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>JCAlertView</string>
+			<key>target</key>
+			<string>E6AF542C0BD4B678F0B156D005629387</string>
+			<key>targetProxy</key>
+			<string>A92F8D2E0CFCE184512A98D658F70142</string>
+		</dict>
+		<key>EE5D6304D6519F6B8791C10525530DB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6E767DBD09D9B2FBE7735ABD88956647</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>F3FB3FCD23A9D94CB68A7E3313FF5F10</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1137,9 +2285,53 @@
 		<key>F4294D35A1C9042A421944CDD5BC9832</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5719E01E6ADCEF611D57D48C75685BF5</string>
+			<string>478F0BBA725626FFE9A7DE2D5034DF8B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>F4F8A67C8FCC5B2A6025788DA6595442</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5265FE94ADBB4CF26AE009528CE5C160</string>
+				<string>B0CDB683F830375E8FE628F4ADE798E1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F7DF31D19471D1B62172366A1CBA33F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NVActivityIndicatorAnimationBallScaleRipple.swift</string>
+			<key>path</key>
+			<string>NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA58CD53811433B53CB0765CE45FE1AF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_On_the_Map.framework</string>
+			<key>path</key>
+			<string>Pods_On_the_Map.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>FB45FFD90572718D82AB9092B750F0CA</key>
 		<dict>
@@ -1208,6 +2400,26 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
+		</dict>
+		<key>FC513481E5E93CCD0D98FFE2339E5F3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A050A73C29D30FF828655F362BAA1539</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FCD8F01345CE0B78D279DB947614E241</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>626D49AD18621B0A3059EE726B27AE89</string>
+			<key>remoteInfo</key>
+			<string>NVActivityIndicatorView</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

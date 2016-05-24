@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import JCAlertView
+import NVActivityIndicatorView
 
 class OTMNavigationViewController: UIViewController {
     
@@ -59,8 +59,10 @@ extension OTMNavigationViewController {
     
     @objc private func getStudentLocations() {
         
+        NVActivityIndicatorView.showHUDAddedTo(view)
         ParseClient.sharedInstance().getStudentLocation { (success, locations, errorMessage) in
-            performUIUpdatesOnMain({ 
+            performUIUpdatesOnMain({
+                NVActivityIndicatorView.hideHUDForView(self.view)
                 if success {
                     self.locations = ParseLocation.locationsFromResult(locations!)
                     NSNotificationCenter.defaultCenter().postNotificationName(Utilities.NotificationConstants.LocaltionDataUpdated, object: nil)
@@ -74,8 +76,11 @@ extension OTMNavigationViewController {
     }
     
     func postStudentLocationFrom(location: ParseLocation) {
+        
+        NVActivityIndicatorView.showHUDAddedTo(view)
         ParseClient.sharedInstance().postStudentLocationWithLocation(location) { (success, errorMessage) in
-            performUIUpdatesOnMain({ 
+            performUIUpdatesOnMain({
+                NVActivityIndicatorView.hideHUDForView(self.view)
                 if success {
                     showAlertViewWith("Yeah!", error: "You just posted your location!", type: .AlertViewWithOneButton, firstButtonTitle: "OK", firstButtonHandler: nil, secondButtonTitle: nil, secondButtonHandler: nil)
                     self.locations?.insert(location, atIndex: 0)

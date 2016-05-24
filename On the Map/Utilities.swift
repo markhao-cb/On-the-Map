@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 import JCAlertView
+import NVActivityIndicatorView
 
 struct Utilities {
     
     static let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     static let session = NSURLSession.sharedSession()
-    
     
     //MARK: Methods for Networking
     
@@ -71,8 +71,35 @@ extension UIViewController {
     }
 }
 
-//Class Methods
+extension NVActivityIndicatorView {
+    class func showHUDAddedTo(view: UIView) {
+        let hud = NVActivityIndicatorView(frame: CGRectMake(0, 0, 100, 100), type: .BallSpinFadeLoader, color: UIColor.whiteColor(), padding: 20)
+        hud.center = view.center
+        hud.hidesWhenStopped = true
+        view.addSubview(hud)
+        hud.startAnimation()
+    }
+    
+    class func hideHUDForView(view: UIView) {
+        if let hud = HUDForView(view) {
+            hud.hidesWhenStopped = true
+            hud.stopAnimation()
+            hud.removeFromSuperview()
+        }
+    }
+    
+    private class func HUDForView(view: UIView) -> NVActivityIndicatorView? {
+        let subviewEnum = view.subviews.reverse()
+        for subview in subviewEnum {
+            if subview.isKindOfClass(self) {
+                return subview as? NVActivityIndicatorView
+            }
+        }
+        return nil
+    }
+}
 
+//Class Methods
 func performUIUpdatesOnMain(updates: () -> Void) {
     dispatch_async(dispatch_get_main_queue()) {
         updates()
@@ -103,9 +130,18 @@ func showAlertViewWith(title: String, error: String, type: Utilities.AlertViewTy
     }
 }
 
-func addProgressIndicatorTo(view: UIView, withAnimation: Bool) {
-    var indicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
-    indicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0)
-    indicator.center = view.center
-    view.addSubview(indicator)
-}
+
+
+//func showProgressIndicator(toView: UIView, animated: Bool) {
+//     weak var indicator = NVActivityIndicatorView(frame: CGRectMake(0, 0, 40, 40), type: .BallSpinFadeLoader, color: UIColor.grayColor(), padding: 20)
+//    if animated {
+//        indicator.center = toView.center
+//        toView.addSubview(indicator)
+//        toView.bringSubviewToFront(indicator)
+//        indicator.startAnimation()
+//    } else {
+//        indicator.stopAnimation()
+//        indicator.removeFromSuperview()
+//    }
+//    
+//}

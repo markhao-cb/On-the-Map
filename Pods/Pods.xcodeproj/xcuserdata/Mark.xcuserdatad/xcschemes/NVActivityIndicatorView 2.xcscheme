@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6AF542C0BD4B678F0B156D005629387"
-               BuildableName = "JCAlertView.framework"
-               BlueprintName = "JCAlertView"
+               BlueprintIdentifier = "626D49AD18621B0A3059EE726B27AE89"
+               BuildableName = "NVActivityIndicatorView.framework"
+               BlueprintName = "NVActivityIndicatorView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E6AF542C0BD4B678F0B156D005629387"
-            BuildableName = "JCAlertView.framework"
-            BlueprintName = "JCAlertView"
+            BlueprintIdentifier = "626D49AD18621B0A3059EE726B27AE89"
+            BuildableName = "NVActivityIndicatorView.framework"
+            BlueprintName = "NVActivityIndicatorView"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E6AF542C0BD4B678F0B156D005629387"
-            BuildableName = "JCAlertView.framework"
-            BlueprintName = "JCAlertView"
+            BlueprintIdentifier = "626D49AD18621B0A3059EE726B27AE89"
+            BuildableName = "NVActivityIndicatorView.framework"
+            BlueprintName = "NVActivityIndicatorView"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -1,10 +1,13 @@
 PODS:
   - JCAlertView (1.1.5)
+  - NVActivityIndicatorView (2.6)
 
 DEPENDENCIES:
   - JCAlertView
+  - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   JCAlertView: c65a7b298b8b497b3db783d82f719b88f4914869
+  NVActivityIndicatorView: b8207b369c012af32da0916a8346a56d16a5fbbe
 
 COCOAPODS: 0.39.0

@@ -31,7 +31,7 @@ extension OTMNavigationViewController {
     private func setupNavigationBar() {
         navigationItem.title = "On the Map"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "pin"), style: .Plain, target: self, action: #selector(addPin))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "refresh"), style: .Plain, target: self, action: #selector(getStudentLocations))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "logout"), style: .Plain, target: self, action: #selector(logoutCurrentSession))
     }
 }
 
@@ -57,7 +57,7 @@ extension OTMNavigationViewController : PostLocationDelegate {
 //MARK: -Networking Methods
 extension OTMNavigationViewController {
     
-    @objc private func getStudentLocations() {
+    private func getStudentLocations() {
         
         NVActivityIndicatorView.showHUDAddedTo(view)
         ParseClient.sharedInstance().getStudentLocation { (success, locations, errorMessage) in
@@ -92,6 +92,18 @@ extension OTMNavigationViewController {
                 }
             })
         }
+    }
+    
+    func logoutCurrentSession() {
+        showAlertViewWith("Wait...", error: "Are You Sure to Logout?", type: .AlertViewWithTwoButtons, firstButtonTitle: "Yes", firstButtonHandler: {
+                UDClient.sharedInstance().logoutCurrentSession({ (success, errorMessage) in
+                    performUIUpdatesOnMain({
+                        print("Logout Successfully")
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    })
+                })
+            }, secondButtonTitle: "No", secondButtonHandler: nil
+        )
     }
 }
 

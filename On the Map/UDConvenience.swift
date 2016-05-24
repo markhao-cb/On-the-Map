@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+// MARK: -Methods for login
 extension UDClient {
     
     func authenticateWithUsernameAndPassword(username:String, password:String, completionHandlerForAuth: (success: Bool, errorString: String?) -> Void) {
@@ -86,4 +88,31 @@ extension UDClient {
         
         
     }
+}
+
+
+//MARK: -Methods for logout
+extension UDClient {
+    
+    func logoutCurrentSession(completionHandlerForLogout: (success: Bool, errorMessage: String?) -> Void) {
+        let parameters = [String: AnyObject]()
+        let method = UDClient.Methods.Session
+        UDClient.sharedInstance().taskForDELETEMethod(method, parameters: parameters) { (result, error) in
+            
+            guard (error == nil) else {
+                completionHandlerForLogout(success: false, errorMessage: "Logout failed. Error: \(error?.domain)")
+                return
+            }
+            
+            UDClient.sharedInstance().firstName = nil
+            UDClient.sharedInstance().lastName = nil
+            UDClient.sharedInstance().sessionID = nil
+            UDClient.sharedInstance().userID = nil
+            
+            completionHandlerForLogout(success: true, errorMessage: nil)
+        }
+        
+    }
+    
+    
 }
